@@ -1,0 +1,13137 @@
+{
+ "models": [
+  {
+   "name": "A75",
+   "ids": [
+    [
+     11,
+     1,
+     1
+    ],
+    [
+     11,
+     4,
+     1
+    ]
+   ],
+   "ktype": 75,
+   "profile": "ns",
+   "remap": "Vw",
+   "layout": [
+    "ESC",
+    "",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "KP7",
+    "KP8",
+    "KP9",
+    "",
+    "",
+    "",
+    "",
+    "SWUNG",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "KP4",
+    "KP5",
+    "KP6",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "KP1",
+    "KP2",
+    "KP3",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "",
+    "RETURN",
+    "",
+    "KP0",
+    "KP_DEL",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "",
+    "SHF_R",
+    "ARR_UP",
+    "",
+    "NUMS",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "APP",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "CTRL_R",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 0,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 2,
+      "cmd": 252,
+      "code": 58,
+      "type": 0,
+      "text": "F1"
+     },
+     {
+      "i": 3,
+      "cmd": 252,
+      "code": 59,
+      "type": 0,
+      "text": "F2"
+     },
+     {
+      "i": 4,
+      "cmd": 252,
+      "code": 60,
+      "type": 0,
+      "text": "F3"
+     },
+     {
+      "i": 5,
+      "cmd": 252,
+      "code": 61,
+      "type": 0,
+      "text": "F4"
+     },
+     {
+      "i": 6,
+      "cmd": 252,
+      "code": 62,
+      "type": 0,
+      "text": "F5"
+     },
+     {
+      "i": 7,
+      "cmd": 252,
+      "code": 63,
+      "type": 0,
+      "text": "F6"
+     },
+     {
+      "i": 8,
+      "cmd": 252,
+      "code": 64,
+      "type": 0,
+      "text": "F7"
+     },
+     {
+      "i": 9,
+      "cmd": 252,
+      "code": 65,
+      "type": 0,
+      "text": "F8"
+     },
+     {
+      "i": 10,
+      "cmd": 252,
+      "code": 66,
+      "type": 0,
+      "text": "F9"
+     },
+     {
+      "i": 11,
+      "cmd": 252,
+      "code": 67,
+      "type": 0,
+      "text": "F10"
+     },
+     {
+      "i": 12,
+      "cmd": 252,
+      "code": 68,
+      "type": 0,
+      "text": "F11"
+     },
+     {
+      "i": 13,
+      "cmd": 252,
+      "code": 69,
+      "type": 0,
+      "text": "F12"
+     },
+     {
+      "i": 14,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 53,
+      "type": 0,
+      "text": "`~"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 36,
+      "cmd": 252,
+      "code": 74,
+      "type": 0,
+      "text": "Home"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 56,
+      "cmd": 252,
+      "code": 0,
+      "type": 0,
+      "text": ""
+     },
+     {
+      "i": 57,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 78,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 98,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 100,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 115,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 116,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 117,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 120,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 121,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "A75Ultra",
+   "ids": [
+    [
+     11,
+     4,
+     4
+    ]
+   ],
+   "ktype": 756,
+   "profile": "is",
+   "remap": "cs",
+   "layout": [
+    "ESC",
+    "",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "KP7",
+    "KP8",
+    "KP9",
+    "",
+    "",
+    "",
+    "",
+    "SWUNG",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "KP4",
+    "KP5",
+    "KP6",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "KP1",
+    "KP2",
+    "KP3",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "",
+    "RETURN",
+    "",
+    "KP0",
+    "KP_DEL",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "",
+    "SHF_R",
+    "ARR_UP",
+    "NUMS",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "APP",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "CTRL_R",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 0,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 2,
+      "cmd": 252,
+      "code": 58,
+      "type": 0,
+      "text": "F1"
+     },
+     {
+      "i": 3,
+      "cmd": 252,
+      "code": 59,
+      "type": 0,
+      "text": "F2"
+     },
+     {
+      "i": 4,
+      "cmd": 252,
+      "code": 60,
+      "type": 0,
+      "text": "F3"
+     },
+     {
+      "i": 5,
+      "cmd": 252,
+      "code": 61,
+      "type": 0,
+      "text": "F4"
+     },
+     {
+      "i": 6,
+      "cmd": 252,
+      "code": 62,
+      "type": 0,
+      "text": "F5"
+     },
+     {
+      "i": 7,
+      "cmd": 252,
+      "code": 63,
+      "type": 0,
+      "text": "F6"
+     },
+     {
+      "i": 8,
+      "cmd": 252,
+      "code": 64,
+      "type": 0,
+      "text": "F7"
+     },
+     {
+      "i": 9,
+      "cmd": 252,
+      "code": 65,
+      "type": 0,
+      "text": "F8"
+     },
+     {
+      "i": 10,
+      "cmd": 252,
+      "code": 66,
+      "type": 0,
+      "text": "F9"
+     },
+     {
+      "i": 11,
+      "cmd": 252,
+      "code": 67,
+      "type": 0,
+      "text": "F10"
+     },
+     {
+      "i": 12,
+      "cmd": 252,
+      "code": 68,
+      "type": 0,
+      "text": "F11"
+     },
+     {
+      "i": 13,
+      "cmd": 252,
+      "code": 69,
+      "type": 0,
+      "text": "F12"
+     },
+     {
+      "i": 14,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 53,
+      "type": 0,
+      "text": "`~"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 36,
+      "cmd": 252,
+      "code": 74,
+      "type": 0,
+      "text": "Home"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 56,
+      "cmd": 252,
+      "code": 0,
+      "type": 0,
+      "text": ""
+     },
+     {
+      "i": 57,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 78,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 98,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 99,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 115,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 116,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 117,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 120,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 121,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     },
+     {
+      "i": 15,
+      "cmd": 252,
+      "code": 104,
+      "type": 0,
+      "text": "F13"
+     },
+     {
+      "i": 35,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 77,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 96,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 114,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 118,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "A75Master",
+   "ids": [
+    [
+     11,
+     5,
+     4
+    ]
+   ],
+   "ktype": 757,
+   "profile": "Us",
+   "remap": "Fs",
+   "layout": [
+    "ESC",
+    "",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "KP7",
+    "KP8",
+    "KP9",
+    "",
+    "",
+    "",
+    "",
+    "SWUNG",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "KP4",
+    "KP5",
+    "KP6",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "KP1",
+    "KP2",
+    "KP3",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "",
+    "RETURN",
+    "",
+    "KP0",
+    "KP_DEL",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "",
+    "SHF_R",
+    "ARR_UP",
+    "NUMS",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "APP",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "CTRL_R",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 0,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 2,
+      "cmd": 252,
+      "code": 58,
+      "type": 0,
+      "text": "F1"
+     },
+     {
+      "i": 3,
+      "cmd": 252,
+      "code": 59,
+      "type": 0,
+      "text": "F2"
+     },
+     {
+      "i": 4,
+      "cmd": 252,
+      "code": 60,
+      "type": 0,
+      "text": "F3"
+     },
+     {
+      "i": 5,
+      "cmd": 252,
+      "code": 61,
+      "type": 0,
+      "text": "F4"
+     },
+     {
+      "i": 6,
+      "cmd": 252,
+      "code": 62,
+      "type": 0,
+      "text": "F5"
+     },
+     {
+      "i": 7,
+      "cmd": 252,
+      "code": 63,
+      "type": 0,
+      "text": "F6"
+     },
+     {
+      "i": 8,
+      "cmd": 252,
+      "code": 64,
+      "type": 0,
+      "text": "F7"
+     },
+     {
+      "i": 9,
+      "cmd": 252,
+      "code": 65,
+      "type": 0,
+      "text": "F8"
+     },
+     {
+      "i": 10,
+      "cmd": 252,
+      "code": 66,
+      "type": 0,
+      "text": "F9"
+     },
+     {
+      "i": 11,
+      "cmd": 252,
+      "code": 67,
+      "type": 0,
+      "text": "F10"
+     },
+     {
+      "i": 12,
+      "cmd": 252,
+      "code": 68,
+      "type": 0,
+      "text": "F11"
+     },
+     {
+      "i": 13,
+      "cmd": 252,
+      "code": 69,
+      "type": 0,
+      "text": "F12"
+     },
+     {
+      "i": 14,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 15,
+      "cmd": 252,
+      "code": 104,
+      "type": 0,
+      "text": "F13"
+     },
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 53,
+      "type": 0,
+      "text": "`~"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 56,
+      "cmd": 252,
+      "code": 0,
+      "type": 0,
+      "text": ""
+     },
+     {
+      "i": 57,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 78,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 98,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 99,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 115,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 116,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 117,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 120,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 121,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     },
+     {
+      "i": 35,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 77,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 96,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 114,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 118,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "A75Pro",
+   "ids": [
+    [
+     11,
+     4,
+     3
+    ]
+   ],
+   "ktype": 750,
+   "profile": "ss",
+   "remap": "Pw",
+   "layout": [
+    "ESC",
+    "",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "KP7",
+    "KP8",
+    "KP9",
+    "",
+    "",
+    "",
+    "",
+    "SWUNG",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "KP4",
+    "KP5",
+    "KP6",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "KP1",
+    "KP2",
+    "KP3",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "",
+    "RETURN",
+    "",
+    "KP0",
+    "KP_DEL",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "",
+    "SHF_R",
+    "ARR_UP",
+    "",
+    "NUMS",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "APP",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "CTRL_R",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 0,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 2,
+      "cmd": 252,
+      "code": 58,
+      "type": 0,
+      "text": "F1"
+     },
+     {
+      "i": 3,
+      "cmd": 252,
+      "code": 59,
+      "type": 0,
+      "text": "F2"
+     },
+     {
+      "i": 4,
+      "cmd": 252,
+      "code": 60,
+      "type": 0,
+      "text": "F3"
+     },
+     {
+      "i": 5,
+      "cmd": 252,
+      "code": 61,
+      "type": 0,
+      "text": "F4"
+     },
+     {
+      "i": 6,
+      "cmd": 252,
+      "code": 62,
+      "type": 0,
+      "text": "F5"
+     },
+     {
+      "i": 7,
+      "cmd": 252,
+      "code": 63,
+      "type": 0,
+      "text": "F6"
+     },
+     {
+      "i": 8,
+      "cmd": 252,
+      "code": 64,
+      "type": 0,
+      "text": "F7"
+     },
+     {
+      "i": 9,
+      "cmd": 252,
+      "code": 65,
+      "type": 0,
+      "text": "F8"
+     },
+     {
+      "i": 10,
+      "cmd": 252,
+      "code": 66,
+      "type": 0,
+      "text": "F9"
+     },
+     {
+      "i": 11,
+      "cmd": 252,
+      "code": 67,
+      "type": 0,
+      "text": "F10"
+     },
+     {
+      "i": 12,
+      "cmd": 252,
+      "code": 68,
+      "type": 0,
+      "text": "F11"
+     },
+     {
+      "i": 13,
+      "cmd": 252,
+      "code": 69,
+      "type": 0,
+      "text": "F12"
+     },
+     {
+      "i": 14,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 53,
+      "type": 0,
+      "text": "`~"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 36,
+      "cmd": 252,
+      "code": 74,
+      "type": 0,
+      "text": "Home"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 56,
+      "cmd": 252,
+      "code": 0,
+      "type": 0,
+      "text": ""
+     },
+     {
+      "i": 57,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 78,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 98,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 100,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 115,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 116,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 117,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 120,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 121,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "A75UK",
+   "ids": [
+    [
+     11,
+     4,
+     2
+    ]
+   ],
+   "ktype": 751,
+   "profile": "rs",
+   "remap": "jw",
+   "layout": [
+    "ESC",
+    "",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "KP7",
+    "KP8",
+    "KP9",
+    "",
+    "",
+    "",
+    "",
+    "SWUNG",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "KP4",
+    "KP5",
+    "KP6",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "KP1",
+    "KP2",
+    "KP3",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "EUR_K42",
+    "RETURN",
+    "",
+    "KP0",
+    "KP_DEL",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "",
+    "SHF_R",
+    "ARR_UP",
+    "",
+    "NUMS",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "APP",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "CTRL_R",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 0,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 2,
+      "cmd": 252,
+      "code": 58,
+      "type": 0,
+      "text": "F1"
+     },
+     {
+      "i": 3,
+      "cmd": 252,
+      "code": 59,
+      "type": 0,
+      "text": "F2"
+     },
+     {
+      "i": 4,
+      "cmd": 252,
+      "code": 60,
+      "type": 0,
+      "text": "F3"
+     },
+     {
+      "i": 5,
+      "cmd": 252,
+      "code": 61,
+      "type": 0,
+      "text": "F4"
+     },
+     {
+      "i": 6,
+      "cmd": 252,
+      "code": 62,
+      "type": 0,
+      "text": "F5"
+     },
+     {
+      "i": 7,
+      "cmd": 252,
+      "code": 63,
+      "type": 0,
+      "text": "F6"
+     },
+     {
+      "i": 8,
+      "cmd": 252,
+      "code": 64,
+      "type": 0,
+      "text": "F7"
+     },
+     {
+      "i": 9,
+      "cmd": 252,
+      "code": 65,
+      "type": 0,
+      "text": "F8"
+     },
+     {
+      "i": 10,
+      "cmd": 252,
+      "code": 66,
+      "type": 0,
+      "text": "F9"
+     },
+     {
+      "i": 11,
+      "cmd": 252,
+      "code": 67,
+      "type": 0,
+      "text": "F10"
+     },
+     {
+      "i": 12,
+      "cmd": 252,
+      "code": 68,
+      "type": 0,
+      "text": "F11"
+     },
+     {
+      "i": 13,
+      "cmd": 252,
+      "code": 69,
+      "type": 0,
+      "text": "F12"
+     },
+     {
+      "i": 14,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 53,
+      "type": 0,
+      "text": "`~"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 36,
+      "cmd": 252,
+      "code": 74,
+      "type": 0,
+      "text": "Home"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 56,
+      "cmd": 252,
+      "code": 0,
+      "type": 0,
+      "text": ""
+     },
+     {
+      "i": 57,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 78,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 98,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 100,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 115,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 116,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 117,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 120,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 121,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "A75FR",
+   "ids": [],
+   "ktype": 752,
+   "profile": "Es",
+   "remap": "Ww",
+   "layout": [
+    "ESC",
+    "",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "KP7",
+    "KP8",
+    "KP9",
+    "",
+    "",
+    "",
+    "",
+    "SWUNG",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "KP4",
+    "KP5",
+    "KP6",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "KP1",
+    "KP2",
+    "KP3",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "EUR_K42",
+    "RETURN",
+    "",
+    "KP0",
+    "KP_DEL",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "",
+    "SHF_R",
+    "ARR_UP",
+    "",
+    "NUMS",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "APP",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "CTRL_R",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 0,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 2,
+      "cmd": 252,
+      "code": 58,
+      "type": 0,
+      "text": "F1"
+     },
+     {
+      "i": 3,
+      "cmd": 252,
+      "code": 59,
+      "type": 0,
+      "text": "F2"
+     },
+     {
+      "i": 4,
+      "cmd": 252,
+      "code": 60,
+      "type": 0,
+      "text": "F3"
+     },
+     {
+      "i": 5,
+      "cmd": 252,
+      "code": 61,
+      "type": 0,
+      "text": "F4"
+     },
+     {
+      "i": 6,
+      "cmd": 252,
+      "code": 62,
+      "type": 0,
+      "text": "F5"
+     },
+     {
+      "i": 7,
+      "cmd": 252,
+      "code": 63,
+      "type": 0,
+      "text": "F6"
+     },
+     {
+      "i": 8,
+      "cmd": 252,
+      "code": 64,
+      "type": 0,
+      "text": "F7"
+     },
+     {
+      "i": 9,
+      "cmd": 252,
+      "code": 65,
+      "type": 0,
+      "text": "F8"
+     },
+     {
+      "i": 10,
+      "cmd": 252,
+      "code": 66,
+      "type": 0,
+      "text": "F9"
+     },
+     {
+      "i": 11,
+      "cmd": 252,
+      "code": 67,
+      "type": 0,
+      "text": "F10"
+     },
+     {
+      "i": 12,
+      "cmd": 252,
+      "code": 68,
+      "type": 0,
+      "text": "F11"
+     },
+     {
+      "i": 13,
+      "cmd": 252,
+      "code": 69,
+      "type": 0,
+      "text": "F12"
+     },
+     {
+      "i": 14,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 53,
+      "type": 0,
+      "text": "`~"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 36,
+      "cmd": 252,
+      "code": 74,
+      "type": 0,
+      "text": "Home"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 56,
+      "cmd": 252,
+      "code": 0,
+      "type": 0,
+      "text": ""
+     },
+     {
+      "i": 57,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 78,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 98,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 100,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 115,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 116,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 117,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 120,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 121,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "G65lite",
+   "ids": [
+    [
+     11,
+     2,
+     5
+    ]
+   ],
+   "ktype": 650,
+   "profile": "ts",
+   "remap": "gs",
+   "layout": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "ESC",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "DELETE",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "END",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "EUR_K42",
+    "RETURN",
+    "PAGEUP",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "SHF_R",
+    "ARR_UP",
+    "PAGEDW",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "FN2",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 35,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 56,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 77,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 96,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 98,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 114,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 115,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 116,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 117,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 118,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "G65",
+   "ids": [
+    [
+     11,
+     2,
+     1
+    ],
+    [
+     15,
+     1,
+     1
+    ]
+   ],
+   "ktype": 65,
+   "profile": "Is",
+   "remap": "Bs",
+   "layout": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "ESC",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "DELETE",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "END",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "EUR_K42",
+    "RETURN",
+    "PAGEUP",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "SHF_R",
+    "ARR_UP",
+    "PAGEDW",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "FN2",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 35,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 56,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 77,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 96,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 98,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 114,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 115,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 116,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 117,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 118,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "G65m1",
+   "ids": [
+    [
+     11,
+     2,
+     3
+    ]
+   ],
+   "ktype": 651,
+   "profile": "ks",
+   "remap": "us",
+   "layout": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "ESC",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "DELETE",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "END",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "EUR_K42",
+    "RETURN",
+    "PAGEUP",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "SHF_R",
+    "ARR_UP",
+    "PAGEDW",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "FN2",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 35,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 56,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 77,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 96,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 98,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 114,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 115,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 116,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 117,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 118,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "G65m2",
+   "ids": [
+    [
+     11,
+     16,
+     1
+    ]
+   ],
+   "ktype": 652,
+   "profile": "Rs",
+   "remap": "Js",
+   "layout": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "ESC",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "DELETE",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "END",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "EUR_K42",
+    "RETURN",
+    "PAGEUP",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "SHF_R",
+    "ARR_UP",
+    "PAGEDW",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "FN2",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 35,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 56,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 77,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 96,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 98,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 114,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 115,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 116,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 117,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 118,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "G65m3",
+   "ids": [
+    [
+     11,
+     18,
+     1
+    ]
+   ],
+   "ktype": 653,
+   "profile": "Ys",
+   "remap": "Gs",
+   "layout": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "ESC",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "DELETE",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "END",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "EUR_K42",
+    "RETURN",
+    "PAGEUP",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "SHF_R",
+    "ARR_UP",
+    "PAGEDW",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "FN2",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 35,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 56,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 77,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 96,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 98,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 114,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 115,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 116,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 117,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 118,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "G60",
+   "ids": [
+    [
+     11,
+     3,
+     1
+    ]
+   ],
+   "ktype": 60,
+   "profile": "os",
+   "remap": "Qs",
+   "layout": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "ESC",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "EUR_K42",
+    "RETURN",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "",
+    "SHF_R",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "FN2",
+    "CTRL_R",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 115,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 116,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 117,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 118,
+      "cmd": 252,
+      "code": 16,
+      "type": 1,
+      "text": "Ctrl"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "X60",
+   "ids": [
+    [
+     11,
+     6,
+     5
+    ]
+   ],
+   "ktype": 603,
+   "profile": "xs",
+   "remap": "Ts",
+   "layout": [
+    "ESC",
+    "",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "KP7",
+    "KP8",
+    "KP9",
+    "",
+    "",
+    "",
+    "",
+    "SWUNG",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "KP4",
+    "KP5",
+    "KP6",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "KP1",
+    "KP2",
+    "KP3",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "",
+    "RETURN",
+    "",
+    "KP0",
+    "KP_DEL",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "",
+    "SHF_R",
+    "ARR_UP",
+    "NUMS",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "APP",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "CTRL_R",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 0,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 2,
+      "cmd": 252,
+      "code": 58,
+      "type": 0,
+      "text": "F1"
+     },
+     {
+      "i": 3,
+      "cmd": 252,
+      "code": 59,
+      "type": 0,
+      "text": "F2"
+     },
+     {
+      "i": 4,
+      "cmd": 252,
+      "code": 60,
+      "type": 0,
+      "text": "F3"
+     },
+     {
+      "i": 5,
+      "cmd": 252,
+      "code": 61,
+      "type": 0,
+      "text": "F4"
+     },
+     {
+      "i": 6,
+      "cmd": 252,
+      "code": 62,
+      "type": 0,
+      "text": "F5"
+     },
+     {
+      "i": 7,
+      "cmd": 252,
+      "code": 63,
+      "type": 0,
+      "text": "F6"
+     },
+     {
+      "i": 8,
+      "cmd": 252,
+      "code": 64,
+      "type": 0,
+      "text": "F7"
+     },
+     {
+      "i": 9,
+      "cmd": 252,
+      "code": 65,
+      "type": 0,
+      "text": "F8"
+     },
+     {
+      "i": 10,
+      "cmd": 252,
+      "code": 66,
+      "type": 0,
+      "text": "F9"
+     },
+     {
+      "i": 11,
+      "cmd": 252,
+      "code": 67,
+      "type": 0,
+      "text": "F10"
+     },
+     {
+      "i": 12,
+      "cmd": 252,
+      "code": 68,
+      "type": 0,
+      "text": "F11"
+     },
+     {
+      "i": 13,
+      "cmd": 252,
+      "code": 69,
+      "type": 0,
+      "text": "F12"
+     },
+     {
+      "i": 14,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 15,
+      "cmd": 252,
+      "code": 104,
+      "type": 0,
+      "text": "F13"
+     },
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 53,
+      "type": 0,
+      "text": "`~"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 56,
+      "cmd": 252,
+      "code": 0,
+      "type": 0,
+      "text": ""
+     },
+     {
+      "i": 57,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 78,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 98,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 99,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 115,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 116,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 117,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 120,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 121,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "G60m1",
+   "ids": [
+    [
+     11,
+     3,
+     3
+    ]
+   ],
+   "ktype": 600,
+   "profile": "ds",
+   "remap": "Ss",
+   "layout": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "ESC",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "EUR_K42",
+    "RETURN",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "",
+    "SHF_R",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "FN2",
+    "CTRL_R",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 115,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 116,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 117,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 118,
+      "cmd": 252,
+      "code": 16,
+      "type": 1,
+      "text": "Ctrl"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "G60m2",
+   "ids": [
+    [
+     11,
+     19,
+     1
+    ]
+   ],
+   "ktype": 601,
+   "profile": "Ns",
+   "remap": "Ks",
+   "layout": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "ESC",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "EUR_K42",
+    "RETURN",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "",
+    "SHF_R",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "FN2",
+    "CTRL_R",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 115,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 116,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 117,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 118,
+      "cmd": 252,
+      "code": 16,
+      "type": 1,
+      "text": "Ctrl"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "G60m3",
+   "ids": [
+    [
+     11,
+     21,
+     1
+    ]
+   ],
+   "ktype": 602,
+   "profile": "ys",
+   "remap": "Ls",
+   "layout": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "ESC",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "EUR_K42",
+    "RETURN",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "",
+    "SHF_R",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "FN2",
+    "CTRL_R",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 115,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 116,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 117,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 118,
+      "cmd": 252,
+      "code": 16,
+      "type": 1,
+      "text": "Ctrl"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "G75",
+   "ids": [
+    [
+     11,
+     4,
+     5
+    ]
+   ],
+   "ktype": 754,
+   "profile": "yw",
+   "remap": "vw",
+   "layout": [
+    "ESC",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "PRINT",
+    "INSERT",
+    "DELETE",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "SWUNG",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "BACK",
+    "",
+    "HOME",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "SLASH_K29",
+    "",
+    "PAGEUP",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "EUR_K42",
+    "RETURN",
+    "",
+    "PAGEDW",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "EUR_K45",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "SHF_R",
+    "ARR_UP",
+    "",
+    "END",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "",
+    "FN2",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 0,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 1,
+      "cmd": 252,
+      "code": 58,
+      "type": 0,
+      "text": "F1"
+     },
+     {
+      "i": 2,
+      "cmd": 252,
+      "code": 59,
+      "type": 0,
+      "text": "F2"
+     },
+     {
+      "i": 3,
+      "cmd": 252,
+      "code": 60,
+      "type": 0,
+      "text": "F3"
+     },
+     {
+      "i": 4,
+      "cmd": 252,
+      "code": 61,
+      "type": 0,
+      "text": "F4"
+     },
+     {
+      "i": 5,
+      "cmd": 252,
+      "code": 62,
+      "type": 0,
+      "text": "F5"
+     },
+     {
+      "i": 6,
+      "cmd": 252,
+      "code": 63,
+      "type": 0,
+      "text": "F6"
+     },
+     {
+      "i": 7,
+      "cmd": 252,
+      "code": 64,
+      "type": 0,
+      "text": "F7"
+     },
+     {
+      "i": 8,
+      "cmd": 252,
+      "code": 65,
+      "type": 0,
+      "text": "F8"
+     },
+     {
+      "i": 9,
+      "cmd": 252,
+      "code": 66,
+      "type": 0,
+      "text": "F9"
+     },
+     {
+      "i": 10,
+      "cmd": 252,
+      "code": 67,
+      "type": 0,
+      "text": "F10"
+     },
+     {
+      "i": 11,
+      "cmd": 252,
+      "code": 68,
+      "type": 0,
+      "text": "F11"
+     },
+     {
+      "i": 12,
+      "cmd": 252,
+      "code": 69,
+      "type": 0,
+      "text": "F12"
+     },
+     {
+      "i": 13,
+      "cmd": 252,
+      "code": 70,
+      "type": 0,
+      "text": "PRINT"
+     },
+     {
+      "i": 14,
+      "cmd": 252,
+      "code": 73,
+      "type": 0,
+      "text": "INSERT"
+     },
+     {
+      "i": 15,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 53,
+      "type": 0,
+      "text": "`~"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 36,
+      "cmd": 252,
+      "code": 74,
+      "type": 0,
+      "text": "Home"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 55,
+      "cmd": 252,
+      "code": 49,
+      "type": 0,
+      "text": "\\|"
+     },
+     {
+      "i": 56,
+      "cmd": 252,
+      "code": 0,
+      "type": 0,
+      "text": ""
+     },
+     {
+      "i": 57,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": ";:"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "'\""
+     },
+     {
+      "i": 76,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 78,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 96,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 99,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 114,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 115,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 117,
+      "cmd": 254,
+      "code": 254,
+      "type": 3,
+      "text": "Fn2"
+     },
+     {
+      "i": 118,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 120,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  },
+  {
+   "name": "G75JP",
+   "ids": [
+    [
+     11,
+     4,
+     7
+    ]
+   ],
+   "ktype": 755,
+   "profile": "ws",
+   "remap": "Xw",
+   "layout": [
+    "ESC",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "PRINT",
+    "INSERT",
+    "DELETE",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "SWUNG",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "MINUS",
+    "PLUS",
+    "JAP_3_K14",
+    "BACK",
+    "HOME",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "TAB",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    "BRKTS_L",
+    "BRKTS_R",
+    "",
+    "",
+    "PAGEUP",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CAPS",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "COLON",
+    "QOTATN",
+    "EUR_K42",
+    "",
+    "RETURN",
+    "PAGEDW",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "SHF_L",
+    "",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    "COMMA",
+    "PERIOD",
+    "VIRGUE",
+    "JAP_1_K56",
+    "SHF_R",
+    "ARR_UP",
+    "END",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "CTRL_L",
+    "WIN_L",
+    "ALT_L",
+    "",
+    "",
+    "",
+    "SPACE",
+    "",
+    "",
+    "ALT_R",
+    "FN1",
+    "",
+    "CTRL_R",
+    "ARR_L",
+    "ARR_DW",
+    "ARR_R",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "defaults": {
+    "0": [
+     {
+      "i": 0,
+      "cmd": 252,
+      "code": 41,
+      "type": 0,
+      "text": "ESC"
+     },
+     {
+      "i": 1,
+      "cmd": 252,
+      "code": 58,
+      "type": 0,
+      "text": "F1"
+     },
+     {
+      "i": 2,
+      "cmd": 252,
+      "code": 59,
+      "type": 0,
+      "text": "F2"
+     },
+     {
+      "i": 3,
+      "cmd": 252,
+      "code": 60,
+      "type": 0,
+      "text": "F3"
+     },
+     {
+      "i": 4,
+      "cmd": 252,
+      "code": 61,
+      "type": 0,
+      "text": "F4"
+     },
+     {
+      "i": 5,
+      "cmd": 252,
+      "code": 62,
+      "type": 0,
+      "text": "F5"
+     },
+     {
+      "i": 6,
+      "cmd": 252,
+      "code": 63,
+      "type": 0,
+      "text": "F6"
+     },
+     {
+      "i": 7,
+      "cmd": 252,
+      "code": 64,
+      "type": 0,
+      "text": "F7"
+     },
+     {
+      "i": 8,
+      "cmd": 252,
+      "code": 65,
+      "type": 0,
+      "text": "F8"
+     },
+     {
+      "i": 9,
+      "cmd": 252,
+      "code": 66,
+      "type": 0,
+      "text": "F9"
+     },
+     {
+      "i": 10,
+      "cmd": 252,
+      "code": 67,
+      "type": 0,
+      "text": "F10"
+     },
+     {
+      "i": 11,
+      "cmd": 252,
+      "code": 68,
+      "type": 0,
+      "text": "F11"
+     },
+     {
+      "i": 12,
+      "cmd": 252,
+      "code": 69,
+      "type": 0,
+      "text": "F12"
+     },
+     {
+      "i": 13,
+      "cmd": 252,
+      "code": 70,
+      "type": 0,
+      "text": "PRINT"
+     },
+     {
+      "i": 14,
+      "cmd": 252,
+      "code": 73,
+      "type": 0,
+      "text": "INSERT"
+     },
+     {
+      "i": 15,
+      "cmd": 252,
+      "code": 76,
+      "type": 0,
+      "text": "Del"
+     },
+     {
+      "i": 21,
+      "cmd": 252,
+      "code": 53,
+      "type": 0,
+      "text": "`~"
+     },
+     {
+      "i": 22,
+      "cmd": 252,
+      "code": 30,
+      "type": 0,
+      "text": "1!"
+     },
+     {
+      "i": 23,
+      "cmd": 252,
+      "code": 31,
+      "type": 0,
+      "text": "2@"
+     },
+     {
+      "i": 24,
+      "cmd": 252,
+      "code": 32,
+      "type": 0,
+      "text": "3#"
+     },
+     {
+      "i": 25,
+      "cmd": 252,
+      "code": 33,
+      "type": 0,
+      "text": "4$"
+     },
+     {
+      "i": 26,
+      "cmd": 252,
+      "code": 34,
+      "type": 0,
+      "text": "5%"
+     },
+     {
+      "i": 27,
+      "cmd": 252,
+      "code": 35,
+      "type": 0,
+      "text": "6^"
+     },
+     {
+      "i": 28,
+      "cmd": 252,
+      "code": 36,
+      "type": 0,
+      "text": "7&"
+     },
+     {
+      "i": 29,
+      "cmd": 252,
+      "code": 37,
+      "type": 0,
+      "text": "8*"
+     },
+     {
+      "i": 30,
+      "cmd": 252,
+      "code": 38,
+      "type": 0,
+      "text": "9("
+     },
+     {
+      "i": 31,
+      "cmd": 252,
+      "code": 39,
+      "type": 0,
+      "text": "0)"
+     },
+     {
+      "i": 32,
+      "cmd": 252,
+      "code": 45,
+      "type": 0,
+      "text": "-_"
+     },
+     {
+      "i": 33,
+      "cmd": 252,
+      "code": 46,
+      "type": 0,
+      "text": "=+"
+     },
+     {
+      "i": 34,
+      "cmd": 252,
+      "code": 137,
+      "type": 0,
+      "text": "|￥"
+     },
+     {
+      "i": 35,
+      "cmd": 252,
+      "code": 42,
+      "type": 0,
+      "text": "Back"
+     },
+     {
+      "i": 36,
+      "cmd": 252,
+      "code": 74,
+      "type": 0,
+      "text": "Home"
+     },
+     {
+      "i": 42,
+      "cmd": 252,
+      "code": 43,
+      "type": 0,
+      "text": "TAB"
+     },
+     {
+      "i": 43,
+      "cmd": 252,
+      "code": 20,
+      "type": 0,
+      "text": "Q"
+     },
+     {
+      "i": 44,
+      "cmd": 252,
+      "code": 26,
+      "type": 0,
+      "text": "W"
+     },
+     {
+      "i": 45,
+      "cmd": 252,
+      "code": 8,
+      "type": 0,
+      "text": "E"
+     },
+     {
+      "i": 46,
+      "cmd": 252,
+      "code": 21,
+      "type": 0,
+      "text": "R"
+     },
+     {
+      "i": 47,
+      "cmd": 252,
+      "code": 23,
+      "type": 0,
+      "text": "T"
+     },
+     {
+      "i": 48,
+      "cmd": 252,
+      "code": 28,
+      "type": 0,
+      "text": "Y"
+     },
+     {
+      "i": 49,
+      "cmd": 252,
+      "code": 24,
+      "type": 0,
+      "text": "U"
+     },
+     {
+      "i": 50,
+      "cmd": 252,
+      "code": 12,
+      "type": 0,
+      "text": "I"
+     },
+     {
+      "i": 51,
+      "cmd": 252,
+      "code": 18,
+      "type": 0,
+      "text": "O"
+     },
+     {
+      "i": 52,
+      "cmd": 252,
+      "code": 19,
+      "type": 0,
+      "text": "P"
+     },
+     {
+      "i": 53,
+      "cmd": 252,
+      "code": 47,
+      "type": 0,
+      "text": "[{"
+     },
+     {
+      "i": 54,
+      "cmd": 252,
+      "code": 48,
+      "type": 0,
+      "text": "]}"
+     },
+     {
+      "i": 57,
+      "cmd": 252,
+      "code": 75,
+      "type": 0,
+      "text": "PgUp"
+     },
+     {
+      "i": 63,
+      "cmd": 252,
+      "code": 57,
+      "type": 0,
+      "text": "CAPS"
+     },
+     {
+      "i": 64,
+      "cmd": 252,
+      "code": 4,
+      "type": 0,
+      "text": "A"
+     },
+     {
+      "i": 65,
+      "cmd": 252,
+      "code": 22,
+      "type": 0,
+      "text": "S"
+     },
+     {
+      "i": 66,
+      "cmd": 252,
+      "code": 7,
+      "type": 0,
+      "text": "D"
+     },
+     {
+      "i": 67,
+      "cmd": 252,
+      "code": 9,
+      "type": 0,
+      "text": "F"
+     },
+     {
+      "i": 68,
+      "cmd": 252,
+      "code": 10,
+      "type": 0,
+      "text": "G"
+     },
+     {
+      "i": 69,
+      "cmd": 252,
+      "code": 11,
+      "type": 0,
+      "text": "H"
+     },
+     {
+      "i": 70,
+      "cmd": 252,
+      "code": 13,
+      "type": 0,
+      "text": "J"
+     },
+     {
+      "i": 71,
+      "cmd": 252,
+      "code": 14,
+      "type": 0,
+      "text": "K"
+     },
+     {
+      "i": 72,
+      "cmd": 252,
+      "code": 15,
+      "type": 0,
+      "text": "L"
+     },
+     {
+      "i": 73,
+      "cmd": 252,
+      "code": 51,
+      "type": 0,
+      "text": "+;"
+     },
+     {
+      "i": 74,
+      "cmd": 252,
+      "code": 52,
+      "type": 0,
+      "text": "*:"
+     },
+     {
+      "i": 75,
+      "cmd": 252,
+      "code": 50,
+      "type": 0,
+      "text": "}]"
+     },
+     {
+      "i": 77,
+      "cmd": 252,
+      "code": 40,
+      "type": 0,
+      "text": "Enter"
+     },
+     {
+      "i": 78,
+      "cmd": 252,
+      "code": 78,
+      "type": 0,
+      "text": "PgDn"
+     },
+     {
+      "i": 84,
+      "cmd": 252,
+      "code": 2,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 86,
+      "cmd": 252,
+      "code": 29,
+      "type": 0,
+      "text": "Z"
+     },
+     {
+      "i": 87,
+      "cmd": 252,
+      "code": 27,
+      "type": 0,
+      "text": "X"
+     },
+     {
+      "i": 88,
+      "cmd": 252,
+      "code": 6,
+      "type": 0,
+      "text": "C"
+     },
+     {
+      "i": 89,
+      "cmd": 252,
+      "code": 25,
+      "type": 0,
+      "text": "V"
+     },
+     {
+      "i": 90,
+      "cmd": 252,
+      "code": 5,
+      "type": 0,
+      "text": "B"
+     },
+     {
+      "i": 91,
+      "cmd": 252,
+      "code": 17,
+      "type": 0,
+      "text": "N"
+     },
+     {
+      "i": 92,
+      "cmd": 252,
+      "code": 16,
+      "type": 0,
+      "text": "M"
+     },
+     {
+      "i": 93,
+      "cmd": 252,
+      "code": 54,
+      "type": 0,
+      "text": ",<"
+     },
+     {
+      "i": 94,
+      "cmd": 252,
+      "code": 55,
+      "type": 0,
+      "text": ".>"
+     },
+     {
+      "i": 95,
+      "cmd": 252,
+      "code": 56,
+      "type": 0,
+      "text": "/?"
+     },
+     {
+      "i": 96,
+      "cmd": 252,
+      "code": 135,
+      "type": 0,
+      "text": "-﹨"
+     },
+     {
+      "i": 97,
+      "cmd": 252,
+      "code": 32,
+      "type": 1,
+      "text": "Shift"
+     },
+     {
+      "i": 98,
+      "cmd": 252,
+      "code": 82,
+      "type": 0,
+      "text": "ARR_UP"
+     },
+     {
+      "i": 99,
+      "cmd": 252,
+      "code": 77,
+      "type": 0,
+      "text": "End"
+     },
+     {
+      "i": 105,
+      "cmd": 252,
+      "code": 1,
+      "type": 1,
+      "text": "Ctrl"
+     },
+     {
+      "i": 106,
+      "cmd": 252,
+      "code": 227,
+      "type": 0,
+      "text": "Win"
+     },
+     {
+      "i": 107,
+      "cmd": 252,
+      "code": 4,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 111,
+      "cmd": 252,
+      "code": 44,
+      "type": 0,
+      "text": "SPACE"
+     },
+     {
+      "i": 114,
+      "cmd": 252,
+      "code": 64,
+      "type": 1,
+      "text": "Alt"
+     },
+     {
+      "i": 115,
+      "cmd": 255,
+      "code": 255,
+      "type": 3,
+      "text": "Fn"
+     },
+     {
+      "i": 117,
+      "cmd": 252,
+      "code": 16,
+      "type": 1,
+      "text": "CTRL_R"
+     },
+     {
+      "i": 118,
+      "cmd": 252,
+      "code": 80,
+      "type": 0,
+      "text": "ARR_L"
+     },
+     {
+      "i": 119,
+      "cmd": 252,
+      "code": 81,
+      "type": 0,
+      "text": "ARR_DW"
+     },
+     {
+      "i": 120,
+      "cmd": 252,
+      "code": 79,
+      "type": 0,
+      "text": "ARR_R"
+     }
+    ],
+    "1": [],
+    "2": []
+   }
+  }
+ ],
+ "groups": {
+  "0": [
+   {
+    "cmd": 251,
+    "text": "灯光开关",
+    "icon": "led_mode_sw.png",
+    "code": 14,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "灯效循环",
+    "icon": "led_mode_loop.png",
+    "code": 0,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "颜色循环",
+    "icon": "led_color_loop.png",
+    "code": 9,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "灯效暂停",
+    "icon": "led_pause.png",
+    "code": 13,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "上一个灯效",
+    "icon": "led_mode_prev.png",
+    "code": 2,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "下一个灯效",
+    "icon": "led_mode_next.png",
+    "code": 1,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "灯效亮度+",
+    "icon": "led_lumi_inc.png",
+    "code": 4,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "灯效亮度-",
+    "icon": "led_lumi_dec.png",
+    "code": 5,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "灯效速度+",
+    "icon": "led_speed_inc.png",
+    "code": 7,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "灯效速度-",
+    "icon": "led_speed_dec.png",
+    "code": 8,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "锁Win",
+    "icon": "winlock.png",
+    "code": 16,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "RDT",
+    "icon": "RDT.png",
+    "code": 78,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "LW",
+    "icon": "LW.png",
+    "code": 79,
+    "type": 2
+   },
+   {
+    "cmd": 253,
+    "text": "RT",
+    "icon": "RT.png",
+    "code": 32,
+    "type": 2
+   },
+   {
+    "cmd": 253,
+    "text": "RT_MATCH",
+    "icon": "RT_MATCH.png",
+    "code": 14,
+    "type": 2
+   },
+   {
+    "cmd": 253,
+    "text": "autoMatchHardcoreMode",
+    "icon": "hardcore-mode.png",
+    "code": 48,
+    "type": 2
+   },
+   {
+    "cmd": 253,
+    "text": "autoMatchStandardMode",
+    "icon": "standard-mode.png",
+    "code": 50,
+    "type": 2
+   },
+   {
+    "cmd": 253,
+    "text": "autoMatchCompetitiveMode",
+    "icon": "competitive-mode.png",
+    "code": 49,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "灯效控制",
+    "icon": "灯效_l.png",
+    "code": 48,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "色彩控制",
+    "icon": "色彩_l.png",
+    "code": 49,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "速度控制",
+    "icon": "速度_l.png",
+    "code": 50,
+    "type": 2
+   },
+   {
+    "cmd": 251,
+    "text": "亮度控制",
+    "icon": "亮度_l.png",
+    "code": 51,
+    "type": 2
+   }
+  ],
+  "1": [
+   {
+    "cmd": 252,
+    "text": "A",
+    "icon": "key_a.png",
+    "code": 4,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "B",
+    "icon": "key_b.png",
+    "code": 5,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "C",
+    "icon": "key_c.png",
+    "code": 6,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "D",
+    "icon": "key_d.png",
+    "code": 7,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "E",
+    "icon": "key_e.png",
+    "code": 8,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "F",
+    "icon": "key_f.png",
+    "code": 9,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "G",
+    "icon": "key_g.png",
+    "code": 10,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "H",
+    "icon": "key_h.png",
+    "code": 11,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "I",
+    "icon": "key_i.png",
+    "code": 12,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "J",
+    "icon": "key_j.png",
+    "code": 13,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "K",
+    "icon": "key_k.png",
+    "code": 14,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "L",
+    "icon": "key_l.png",
+    "code": 15,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "M",
+    "icon": "key_m.png",
+    "code": 16,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "N",
+    "icon": "key_n.png",
+    "code": 17,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "O",
+    "icon": "key_o.png",
+    "code": 18,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "P",
+    "icon": "key_p.png",
+    "code": 19,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Q",
+    "icon": "key_q.png",
+    "code": 20,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "R",
+    "icon": "key_r.png",
+    "code": 21,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "S",
+    "icon": "key_s.png",
+    "code": 22,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "T",
+    "icon": "key_t.png",
+    "code": 23,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "U",
+    "icon": "key_d.png",
+    "code": 24,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "V",
+    "icon": "key_v.png",
+    "code": 25,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "W",
+    "icon": "key_w.png",
+    "code": 26,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "X",
+    "icon": "key_x.png",
+    "code": 27,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Y",
+    "icon": "key_y.png",
+    "code": 28,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Z",
+    "icon": "key_z.png",
+    "code": 29,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "=+",
+    "icon": "key_plus.png",
+    "code": 46,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "-_",
+    "icon": "key_minus.png",
+    "code": 45,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "[{",
+    "icon": "key_oem4.png",
+    "code": 47,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "]}",
+    "icon": "key_oem6.png",
+    "code": 48,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "\\|",
+    "icon": "key_oem5.png",
+    "code": 49,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": ";",
+    "icon": "key_oem1.png",
+    "code": 51,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "'",
+    "icon": "key_oem7.png",
+    "code": 52,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": ",<",
+    "icon": "key_comma.png",
+    "code": 54,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": ".>",
+    "icon": "key_period.png",
+    "code": 55,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "`~",
+    "icon": "key_oem3.png",
+    "code": 53,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "/?",
+    "icon": "key_oem2.png",
+    "code": 56,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "NoLoop",
+    "icon": "keybuxunhuan.png",
+    "code": 139,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Loop",
+    "icon": "keyxunhuan.png",
+    "code": 138,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "KANA",
+    "icon": "",
+    "code": 136,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "|¥",
+    "icon": "",
+    "code": 137,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "-﹨",
+    "icon": "",
+    "code": 135,
+    "type": 0
+   }
+  ],
+  "2": [
+   {
+    "cmd": 252,
+    "text": "1!",
+    "icon": "key_1.png",
+    "code": 30,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "2@",
+    "icon": "key_2.png",
+    "code": 31,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "3#",
+    "icon": "key_3.png",
+    "code": 32,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "4$",
+    "icon": "key_4.png",
+    "code": 33,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "5%",
+    "icon": "key_5.png",
+    "code": 34,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "6^",
+    "icon": "key_6.png",
+    "code": 35,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "7&",
+    "icon": "key_7.png",
+    "code": 36,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "8*",
+    "icon": "key_8.png",
+    "code": 37,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "9(",
+    "icon": "key_9.png",
+    "code": 38,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "0)",
+    "icon": "key_0.png",
+    "code": 39,
+    "type": 0
+   }
+  ],
+  "3": [
+   {
+    "cmd": 252,
+    "text": "1",
+    "icon": "key_num1.png",
+    "code": 89,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "2",
+    "icon": "key_num2.png",
+    "code": 90,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "3",
+    "icon": "key_num3.png",
+    "code": 91,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "4",
+    "icon": "key_num4.png",
+    "code": 92,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "5",
+    "icon": "key_num5.png",
+    "code": 93,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "6",
+    "icon": "key_num6.png",
+    "code": 94,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "7",
+    "icon": "key_num7.png",
+    "code": 95,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "8",
+    "icon": "key_num8.png",
+    "code": 96,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "9",
+    "icon": "key_num9.png",
+    "code": 97,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "0",
+    "icon": "key_num0.png",
+    "code": 98,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "+",
+    "icon": "key_add.png",
+    "code": 87,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "-",
+    "icon": "key_sub.png",
+    "code": 86,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "*",
+    "icon": "key_mul.png",
+    "code": 85,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "/",
+    "icon": "key_div.png",
+    "code": 84,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": ".",
+    "icon": "key_decimal.png",
+    "code": 99,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Enter",
+    "icon": "key_enter.png",
+    "code": 88,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "NumLk",
+    "icon": "key_NumLk.png",
+    "code": 83,
+    "type": 0
+   }
+  ],
+  "4": [
+   {
+    "cmd": 252,
+    "text": "F1",
+    "icon": "key_f1.png",
+    "code": 58,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "F2",
+    "icon": "key_f2.png",
+    "code": 59,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "F3",
+    "icon": "key_f3.png",
+    "code": 60,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "F4",
+    "icon": "key_f4.png",
+    "code": 61,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "F5",
+    "icon": "key_f5.png",
+    "code": 62,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "F6",
+    "icon": "key_f6.png",
+    "code": 63,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "F7",
+    "icon": "key_f7.png",
+    "code": 64,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "F8",
+    "icon": "key_f8.png",
+    "code": 65,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "F9",
+    "icon": "key_f9.png",
+    "code": 66,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "F10",
+    "icon": "key_f10.png",
+    "code": 67,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "F11",
+    "icon": "key_f11.png",
+    "code": 68,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "F12",
+    "icon": "key_f12.png",
+    "code": 69,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Esc",
+    "icon": "key_esc.png",
+    "code": 41,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Tab",
+    "icon": "key_tab.png",
+    "code": 43,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "App",
+    "icon": "key_app.png",
+    "code": 101,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Ins",
+    "icon": "key_ins.png",
+    "code": 73,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "End",
+    "icon": "key_end.png",
+    "code": 77,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Del",
+    "icon": "key_del.png",
+    "code": 76,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Back",
+    "icon": "key_back.png",
+    "code": 42,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Left",
+    "icon": "key_left.png",
+    "code": 80,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Right",
+    "icon": "key_right.png",
+    "code": 79,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Up",
+    "icon": "key_up.png",
+    "code": 82,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Down",
+    "icon": "key_down.png",
+    "code": 81,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Enter",
+    "icon": "key_enter.png",
+    "code": 40,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Home",
+    "icon": "key_home.png",
+    "code": 74,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Pause",
+    "icon": "key_pause.png",
+    "code": 72,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Space",
+    "icon": "key_space.png",
+    "code": 44,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Caps",
+    "icon": "key_caps.png",
+    "code": 57,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "Print",
+    "icon": "key_print.png",
+    "code": 70,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "PgDn",
+    "icon": "key_pgdn.png",
+    "code": 78,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "PgUp",
+    "icon": "key_pgup.png",
+    "code": 75,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "K45",
+    "icon": "key_k45.png",
+    "code": 100,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "K56",
+    "icon": "key_k56.png",
+    "code": 135,
+    "type": 0
+   }
+  ],
+  "5": [
+   {
+    "cmd": 252,
+    "text": "LCtrl",
+    "icon": "key_ctrl.png",
+    "code": 1,
+    "type": 1
+   },
+   {
+    "cmd": 252,
+    "text": "LShift",
+    "icon": "key_shift.png",
+    "code": 2,
+    "type": 1
+   },
+   {
+    "cmd": 252,
+    "text": "LAlt",
+    "icon": "key_alt.png",
+    "code": 4,
+    "type": 1
+   },
+   {
+    "cmd": 252,
+    "text": "LWin",
+    "icon": "key_win.png",
+    "code": 227,
+    "type": 0
+   },
+   {
+    "cmd": 252,
+    "text": "RCtrl",
+    "icon": "key_ctrl_r.png",
+    "code": 16,
+    "type": 1
+   },
+   {
+    "cmd": 252,
+    "text": "RShift",
+    "icon": "key_shift_r.png",
+    "code": 32,
+    "type": 1
+   },
+   {
+    "cmd": 252,
+    "text": "RAlt",
+    "icon": "key_alt_r.png",
+    "code": 64,
+    "type": 1
+   },
+   {
+    "cmd": 255,
+    "text": "Fn",
+    "icon": "key_fn.png",
+    "code": 128,
+    "type": 1
+   },
+   {
+    "cmd": 254,
+    "text": "Fn2",
+    "icon": "key_fn2.png",
+    "code": 128,
+    "type": 1
+   },
+   {
+    "cmd": 252,
+    "text": "ScrollLk",
+    "icon": "key_ScrollLk.png",
+    "code": 71,
+    "type": 0
+   }
+  ],
+  "6": [
+   {
+    "cmd": 144,
+    "text": "音量+",
+    "icon": "media_volup.png",
+    "code": 144,
+    "type": 3
+   },
+   {
+    "cmd": 145,
+    "text": "音量-",
+    "icon": "media_voldn.png",
+    "code": 145,
+    "type": 3
+   },
+   {
+    "cmd": 149,
+    "text": "上一曲",
+    "icon": "media_prev.png",
+    "code": 149,
+    "type": 3
+   },
+   {
+    "cmd": 150,
+    "text": "下一曲",
+    "icon": "media_next.png",
+    "code": 150,
+    "type": 3
+   },
+   {
+    "cmd": 146,
+    "text": "静音",
+    "icon": "media_mute.png",
+    "code": 146,
+    "type": 3
+   },
+   {
+    "cmd": 147,
+    "text": "播放/暂停",
+    "icon": "media_pause.png",
+    "code": 147,
+    "type": 3
+   },
+   {
+    "cmd": 148,
+    "text": "停止播放",
+    "icon": "media_stop.png",
+    "code": 148,
+    "type": 3
+   }
+  ],
+  "7": [
+   {
+    "cmd": 176,
+    "text": "左键",
+    "icon": "ms_left.png",
+    "code": 176,
+    "type": 3
+   },
+   {
+    "cmd": 178,
+    "text": "中键",
+    "icon": "ms_mid.png",
+    "code": 178,
+    "type": 3
+   },
+   {
+    "cmd": 177,
+    "text": "右键",
+    "icon": "ms_right.png",
+    "code": 177,
+    "type": 3
+   },
+   {
+    "cmd": 181,
+    "text": "上滚",
+    "icon": "ms_sd.png",
+    "code": 181,
+    "type": 3
+   },
+   {
+    "cmd": 182,
+    "text": "下滚",
+    "icon": "ms_sl.png",
+    "code": 182,
+    "type": 3
+   },
+   {
+    "cmd": 183,
+    "text": "左滚",
+    "icon": "ms_sr.png",
+    "code": 183,
+    "type": 3
+   },
+   {
+    "cmd": 184,
+    "text": "右滚",
+    "icon": "ms_su.png",
+    "code": 184,
+    "type": 3
+   }
+  ]
+ }
+}

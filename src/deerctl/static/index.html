@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>deerctl</title>
+<style>
+:root {
+  --bg: #f4f3ef; --panel: #ffffff; --ink: #1d1d1b; --muted: #6b6a66; --line: #dcdad3;
+  --key: #fbfaf7; --key-edge: #cfccc3; --accent: #c2410c; --accent-ink: #fff;
+  --mapped: #fff1e6; --sel: #1d4ed8; --ok: #15803d; --err: #b91c1c;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #151514; --panel: #1f1f1d; --ink: #ecebe6; --muted: #9b9a94; --line: #34332f;
+    --key: #2a2a27; --key-edge: #3d3c38; --accent: #fb923c; --accent-ink: #1a1a1a;
+    --mapped: #3a2716; --sel: #60a5fa; --ok: #4ade80; --err: #f87171; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { display: flex; align-items: baseline; gap: 16px; padding: 18px 24px 8px; flex-wrap: wrap; }
+header h1 { font-size: 18px; margin: 0; letter-spacing: -0.01em; }
+header .meta { color: var(--muted); }
+main { padding: 8px 24px 40px; max-width: 1280px; }
+.bar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 8px 0 14px; }
+.tabs button, .btn { border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+  padding: 7px 14px; border-radius: 8px; cursor: pointer; font: inherit; }
+.tabs button[aria-pressed=true] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
+.btn:disabled { opacity: .45; cursor: default; }
+.spacer { flex: 1; }
+#status { color: var(--muted); min-height: 1.4em; }
+#status.ok { color: var(--ok); } #status.err { color: var(--err); }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 20px; align-items: start; }
+@media (max-width: 980px) { .layout { grid-template-columns: 1fr; } }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.kbd-wrap { overflow-x: auto; }
+.kbd { --u: 52px; display: flex; flex-direction: column; gap: 4px; width: max-content; padding: 4px; }
+.row { display: flex; gap: 4px; }
+.key { width: calc(var(--u) * var(--w) + 4px * (var(--w) - 1)); height: var(--u);
+  background: var(--key); border: 1px solid var(--key-edge); border-bottom-width: 3px; border-radius: 7px;
+  cursor: pointer; padding: 4px 6px; display: flex; flex-direction: column; justify-content: space-between;
+  text-align: left; color: var(--ink); font: inherit; position: relative; }
+.key:hover { border-color: var(--muted); }
+.key .orig { font-size: 11px; color: var(--muted); white-space: nowrap; overflow: hidden; }
+.key .now { font-size: 12.5px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.key.mapped { background: var(--mapped); border-color: var(--accent); }
+.key.sel { outline: 2px solid var(--sel); outline-offset: 1px; }
+.key .ap { position: absolute; right: 5px; top: 3px; font-size: 10px; color: var(--accent); }
+.legend { color: var(--muted); font-size: 12.5px; margin-top: 10px; }
+h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 10px; }
+.grp { margin-bottom: 12px; }
+.grp h3 { font-size: 12px; margin: 0 0 6px; color: var(--muted); font-weight: 600; }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.chip { border: 1px solid var(--line); background: var(--key); color: var(--ink); border-radius: 6px;
+  padding: 3px 8px; font: inherit; font-size: 12.5px; cursor: pointer; }
+.chip:hover { border-color: var(--muted); }
+.chip.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+#picker-empty { color: var(--muted); }
+#targets { max-height: 52vh; overflow-y: auto; padding-right: 4px; }
+input[type=search] { width: 100%; padding: 7px 10px; border-radius: 8px; border: 1px solid var(--line);
+  background: var(--bg); color: var(--ink); font: inherit; margin-bottom: 10px; }
+.perf { margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.field { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items: center; margin-bottom: 10px; }
+.field label { color: var(--muted); }
+.field input[type=range] { grid-column: 1 / -1; width: 100%; accent-color: var(--accent); }
+.val { font-variant-numeric: tabular-nums; font-weight: 600; }
+.switch { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; cursor: pointer; }
+.switch input { accent-color: var(--accent); width: 16px; height: 16px; }
+.note { color: var(--muted); font-size: 12.5px; }
+.overlay { padding: 60px 24px; text-align: center; color: var(--muted); }
+.overlay pre { text-align: left; display: inline-block; background: var(--panel); border: 1px solid var(--line);
+  padding: 12px 16px; border-radius: 8px; color: var(--ink); white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<header>
+  <h1>deerctl</h1>
+  <span class="meta" id="meta">connecting…</span>
+</header>
+<main>
+  <div id="disconnected" class="overlay" hidden>
+    <p>Keyboard not available.</p>
+    <pre id="errtext"></pre>
+    <p><button class="btn" onclick="load()">Retry</button></p>
+  </div>
+  <div id="app" hidden>
+    <div class="bar">
+      <div class="tabs" role="group" aria-label="Layer">
+        <button data-layer="base" aria-pressed="true">Base layer</button>
+        <button data-layer="fn1" aria-pressed="false">Fn layer</button>
+        <button data-layer="fn2" aria-pressed="false">Fn2 layer</button>
+      </div>
+      <span class="spacer"></span>
+      <span id="status"></span>
+      <button class="btn" id="import">Import…</button>
+      <button class="btn" id="export">Export</button>
+      <button class="btn" id="revert" disabled>Revert</button>
+      <button class="btn primary" id="apply" disabled>Apply to keyboard</button>
+    </div>
+    <div class="layout">
+      <section class="card">
+        <div class="kbd-wrap"><div class="kbd" id="kbd"></div></div>
+        <div class="legend" id="legend"></div>
+      </section>
+      <aside class="card">
+        <h2 id="picker-title">Remap</h2>
+        <p id="picker-empty">Click a key on the left, then pick what it should do.</p>
+        <div id="picker" hidden>
+          <div class="bar" style="margin-top:0">
+            <button class="btn" id="reset-key">Reset key</button>
+          </div>
+          <input type="search" id="filter" placeholder="Filter (e.g. ctrl, vol, f13)…">
+          <div id="targets"></div>
+          <div id="key-ap" style="margin-top:14px"></div>
+        </div>
+      </aside>
+    </div>
+    <section class="card perf">
+      <div>
+        <h2>Actuation</h2>
+        <label class="switch"><input type="checkbox" id="ap-on"> Set actuation point</label>
+        <div class="field">
+          <label for="ap">All keys</label><span class="val" id="ap-v"></span>
+          <input type="range" id="ap">
+        </div>
+        <p class="note">Per-key overrides: select a key above. Keys with an override show a dot.</p>
+      </div>
+      <div>
+        <h2>Rapid Trigger</h2>
+        <label class="switch"><input type="checkbox" id="rt-on"> Enabled</label>
+        <div class="field">
+          <label for="rt-p">Press sensitivity</label><span class="val" id="rt-p-v"></span>
+          <input type="range" id="rt-p">
+        </div>
+        <div class="field">
+          <label for="rt-r">Release sensitivity</label><span class="val" id="rt-r-v"></span>
+          <input type="range" id="rt-r">
+        </div>
+      </div>
+      <div>
+        <h2>About</h2>
+        <p class="note" id="about"></p>
+      </div>
+    </section>
+  </div>
+</main>
+<input type="file" id="file" accept="application/json" hidden>
+<script>
+const TOKEN = "__TOKEN__";
+let S = null, P = null, saved = "", layer = "base", sel = null;
+const $ = id => document.getElementById(id);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+
+async function load() {
+  $("meta").textContent = "connecting…";
+  const r = await fetch("/api/state", { headers: { "X-Token": TOKEN } });
+  S = await r.json();
+  if (!S.connected) {
+    $("app").hidden = true; $("disconnected").hidden = false;
+    $("errtext").textContent = S.error; $("meta").textContent = "no keyboard";
+    return;
+  }
+  $("disconnected").hidden = true; $("app").hidden = false;
+  $("meta").textContent = `${S.model} · firmware ${S.firmware}`;
+  P = JSON.parse(JSON.stringify(S.profile));
+  for (const l of ["base", "fn1", "fn2"]) P.layers[l] = P.layers[l] || {};
+  saved = JSON.stringify(P);
+  $("about").textContent = `Profile file: ${S.path}. The keyboard can't report its remaps back, so this file is the source of truth; Apply rewrites all layers.`;
+  setupPerf(); render();
+}
+
+function label(name) { return S.labels[name] || name.replace(/^hid:/, "HID "); }
+function dirty() { return JSON.stringify(P) !== saved; }
+
+function render() {
+  const kbd = $("kbd"); kbd.replaceChildren();
+  const rows = {};
+  for (const k of S.keys) (rows[k.row] ||= []).push(k);
+  const ap = P.actuation?.keys || {};
+  for (const r of Object.keys(rows).sort((a, b) => a - b)) {
+    const row = el("div", "row");
+    for (const k of rows[r].sort((a, b) => a.col - b.col)) {
+      const m = P.layers[layer][k.id];
+      const b = el("button", "key" + (m ? " mapped" : "") + (sel === k.id ? " sel" : ""));
+      b.style.setProperty("--w", k.width);
+      b.title = k.id;
+      b.append(el("span", "orig", k.label || k.id));
+      const now = m ? label(m) : (layer === "base" ? "" : "");
+      b.append(el("span", "now", m ? "→ " + now : ""));
+      if (ap[k.id] != null) b.append(el("span", "ap", "●"));
+      b.onclick = () => { sel = k.id; render(); picker(); };
+      row.append(b);
+    }
+    kbd.append(row);
+  }
+  const n = Object.keys(P.layers[layer]).length;
+  $("legend").textContent = layer === "base"
+    ? `${n} key${n === 1 ? "" : "s"} remapped on the base layer.`
+    : `${n} key${n === 1 ? "" : "s"} set on the ${layer === "fn1" ? "Fn" : "Fn2"} layer (while holding ${layer === "fn1" ? "Fn" : "Fn2"}). Unset keys keep the keyboard's built-in Fn functions.`;
+  $("apply").disabled = $("revert").disabled = !dirty();
+}
+
+function picker() {
+  if (!sel) return;
+  const k = S.keys.find(x => x.id === sel);
+  $("picker-empty").hidden = true; $("picker").hidden = false;
+  $("picker-title").textContent = `${k.label || k.id} · ${layer === "base" ? "Base" : layer === "fn1" ? "Fn" : "Fn2"} layer`;
+  const cur = P.layers[layer][sel] || (layer === "base" ? k.default : null);
+  const q = $("filter").value.trim().toLowerCase();
+  const box = $("targets"); box.replaceChildren();
+  for (const [g, items] of Object.entries(S.targets)) {
+    const vis = items.filter(t => !q || t.name.includes(q) || t.label.toLowerCase().includes(q));
+    if (!vis.length) continue;
+    const grp = el("div", "grp"); grp.append(el("h3", null, g));
+    const chips = el("div", "chips");
+    for (const t of vis) {
+      const c = el("button", "chip" + (t.name === cur ? " on" : ""), t.label);
+      c.title = t.name;
+      c.onclick = () => {
+        if (layer === "base" && t.name === k.default) delete P.layers[layer][sel];
+        else P.layers[layer][sel] = t.name;
+        render(); picker();
+      };
+      chips.append(c);
+    }
+    grp.append(chips); box.append(grp);
+  }
+  // per-key actuation
+  const kap = $("key-ap"); kap.replaceChildren();
+  if (P.actuation) {
+    const v = P.actuation.keys?.[sel];
+    const f = el("div", "field");
+    const lab = el("label", null, "Actuation for this key"); const val = el("span", "val");
+    const inp = el("input"); inp.type = "range"; rangeAttrs(inp, 0.2, S.travel.ap_max);
+    inp.value = v ?? P.actuation.default; val.textContent = v != null ? mm(v) : "default";
+    inp.oninput = () => { (P.actuation.keys ||= {})[sel] = +inp.value; val.textContent = mm(inp.value); render(); };
+    const clr = el("button", "btn", "Use default"); clr.style.marginTop = "6px";
+    clr.onclick = () => { delete P.actuation.keys?.[sel]; render(); picker(); };
+    f.append(lab, val, inp); kap.append(f, clr);
+  }
+}
+
+const mm = v => (+v).toFixed(2) + " mm";
+function rangeAttrs(inp, min, max) { inp.min = min; inp.max = max; inp.step = Math.max(S.travel.step, 0.01); }
+
+function setupPerf() {
+  const t = S.travel;
+  rangeAttrs($("ap"), 0.2, t.ap_max); rangeAttrs($("rt-p"), 0.1, t.rt_max); rangeAttrs($("rt-r"), 0.1, t.rt_max);
+  syncPerf();
+  $("ap-on").onchange = e => { P.actuation = e.target.checked ? { default: 2.0 > t.ap_max ? t.ap_max : 2.0, keys: {} } : undefined; if (!P.actuation) delete P.actuation; syncPerf(); render(); picker(); };
+  $("ap").oninput = e => { P.actuation.default = +e.target.value; syncPerf(); render(); };
+  $("rt-on").onchange = e => { P.rapid_trigger = { press: 0.3, release: 0.3, keys: {}, ...(P.rapid_trigger || {}), enabled: e.target.checked }; syncPerf(); render(); };
+  $("rt-p").oninput = e => { P.rapid_trigger.press = +e.target.value; syncPerf(); render(); };
+  $("rt-r").oninput = e => { P.rapid_trigger.release = +e.target.value; syncPerf(); render(); };
+}
+function syncPerf() {
+  const a = P.actuation, r = P.rapid_trigger;
+  $("ap-on").checked = !!a; $("ap").disabled = !a;
+  $("ap").value = a?.default ?? 2.0; $("ap-v").textContent = a ? mm(a.default) : "keyboard's setting";
+  const rton = !!r?.enabled;
+  $("rt-on").checked = r ? rton : S.rapid_trigger_on;
+  for (const [id, f] of [["rt-p", "press"], ["rt-r", "release"]]) {
+    $(id).disabled = !rton; $(id).value = r?.[f] ?? 0.3; $(id + "-v").textContent = mm(r?.[f] ?? 0.3);
+  }
+}
+
+function status(msg, cls) { const s = $("status"); s.textContent = msg; s.className = cls || ""; }
+
+$("apply").onclick = async () => {
+  $("apply").disabled = true; status("Writing to keyboard…");
+  try {
+    const r = await fetch("/api/save", { method: "POST", headers: { "X-Token": TOKEN, "Content-Type": "application/json" }, body: JSON.stringify({ ...P, apply: true }) });
+    const j = await r.json();
+    if (!j.ok) throw new Error(j.error);
+    saved = JSON.stringify(P); status("Applied ✓", "ok");
+  } catch (e) { status("Failed: " + e.message, "err"); }
+  render();
+};
+$("revert").onclick = () => { P = JSON.parse(saved); setupPerf(); render(); picker(); status(""); };
+$("reset-key").onclick = () => { delete P.layers[layer][sel]; render(); picker(); };
+$("filter").oninput = picker;
+for (const b of document.querySelectorAll(".tabs button")) b.onclick = () => {
+  layer = b.dataset.layer;
+  document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  render(); picker();
+};
+$("export").onclick = () => {
+  const a = el("a"); a.href = URL.createObjectURL(new Blob([JSON.stringify(P, null, 2)], { type: "application/json" }));
+  a.download = `deerctl-${S.model}.json`; a.click();
+};
+$("import").onclick = () => $("file").click();
+$("file").onchange = async e => {
+  try {
+    const d = JSON.parse(await e.target.files[0].text());
+    if (d.model && d.model !== S.model) throw new Error(`file is for ${d.model}`);
+    P = { model: S.model, layers: { base: {}, fn1: {}, fn2: {}, ...(d.layers || {}) } };
+    if (d.actuation) P.actuation = d.actuation;
+    if (d.rapid_trigger) P.rapid_trigger = d.rapid_trigger;
+    setupPerf(); render(); picker(); status("Imported — click Apply to write it.");
+  } catch (err) { status("Import failed: " + err.message, "err"); }
+  e.target.value = "";
+};
+window.onbeforeunload = () => dirty() ? true : undefined;
+load();
+</script>
+</body>
+</html>
