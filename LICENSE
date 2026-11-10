@@ -1,8 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Syed Ali (xuckless) — adaptation and modifications
-Original keyboard protocol, layouts and default keymaps: Drunkdeer
-(reverse-engineered from the Drunkdeer Antler web driver, drunkdeer-antler.com)
+Copyright (c) 2026 Syed Ali (xuckless), adapted and modified from the keyboard protocol, layouts and keymaps of the Drunkdeer Antler web driver (c) Drunkdeer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
