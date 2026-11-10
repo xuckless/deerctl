@@ -56,7 +56,7 @@ On real hardware (G65 ANSI, firmware 0.018, Linux) these have been confirmed:
 - base, Fn and Fn2 layer remaps, captured at the USB level
 - media-key remaps on the base layer
 - built-in Fn shortcuts kept for keys you don't override
-- lighting effects
+- lighting effects and preset colours (with Turbo off)
 
 All models share the same protocol, so the others should work, but they haven't been tried on real hardware. Reports (working or not) are very welcome. Please include the output of `deerctl info`.
 
