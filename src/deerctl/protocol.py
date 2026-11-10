@@ -89,6 +89,47 @@ def actuation_mode(ktype: int, fw: int):
     return BASIC
 
 
+# --- lighting -------------------------------------------------------------------
+PRESET_COLOURS = {"red": "ff0000", "green": "00ff00", "blue": "0000ff", "yellow": "ffff00",
+                  "purple": "ff00ff", "cyan": "00ffff", "white": "ffffff"}
+EFFECT_NAMES = {
+    "color1": "off", "color2": "rotate", "color3": "wave", "color4": "surf-right",
+    "color5": "breath", "color6": "surf-center", "color7": "spectrum", "color8": "ripple",
+    "color9": "static", "color10": "reactive", "color11": "serpentine", "color12": "fountain",
+    "color13": "laser", "color14": "fish", "color15": "surf-cross", "color16": "heart",
+    "color17": "traffic", "color18": "snake", "color19": "raindrops", "color20": "turbo",
+    "color21": "custom", "color22": "stars", "color23": "surf-down", "color24": "surf-repeat",
+    "color25": "random-fountain", "color26": "demons",
+}
+
+
+def _model_entry(model: "Model") -> dict:
+    return next(m for m in MODELS if m["name"] == model.name)
+
+
+def effects(model: "Model", fw: int) -> dict[str, dict]:
+    """Effect name -> {mode, colourful, preset} for this model/firmware (as the web driver computes it)."""
+    table = _model_entry(model)["lighting"]
+    fine = actuation_mode(model.ktype, fw) is FINE
+    shift = 2 if any(e["title"] == "color20" for e in table) else 0
+    out = {}
+    for pos, e in enumerate(table):
+        name = EFFECT_NAMES.get(e["title"], e["title"])
+        if name in ("turbo", "custom"):
+            continue
+        mode = e["code"] if fine and e["code"] is not None else max(0, pos - shift)
+        out[name] = {"mode": mode, "colourful": bool(e["colourful"]), "preset": bool(e["preset"])}
+    return out
+
+
+def custom_mode(model: "Model", fw: int) -> tuple[int, int]:
+    """(mode byte, packet count) for per-key custom colours."""
+    fine = actuation_mode(model.ktype, fw) is FINE
+    mode = 19 if fine else len(_model_entry(model)["lighting"]) - 2
+    chunks = 6 if model.name.startswith(("G60", "G65")) else 7
+    return mode, chunks
+
+
 class Keyboard:
     def __init__(self, dev: HidDevice):
         self.dev = dev
@@ -175,6 +216,23 @@ class Keyboard:
                 for k in range(n):
                     b[4 + k] = min(255, enc[off + k])
                 self.transact(b)
+
+    # -- lighting ---------------------------------------------------------------
+    def set_effect(self, mode: int, speed: int, brightness: int, colour: int):
+        """Preset effect. colour: 0 = rainbow/default, 1..7 = PRESET_COLOURS."""
+        self.transact(_pkt(174, 1, 0, 0, mode, speed, brightness, colour))
+
+    def set_custom_colours(self, colours: dict[int, tuple[int, int, int]], brightness: int):
+        """Per-key static colours: matrix index -> (r, g, b)."""
+        mode, chunks = custom_mode(self.model, self.info.firmware)
+        items = list(colours.items())
+        for c in range(chunks):
+            part = items[c * 13:(c + 1) * 13]
+            b = _pkt(174, 1, 0, 0, mode, 6, brightness, 255)
+            for k, (idx, (r, g, bl)) in enumerate(part):
+                b[8 + 4 * k: 12 + 4 * k] = bytes((128 + idx, r, g, bl))
+            b[8 + 4 * len(part)] = 0xFF
+            self.transact(b)
 
     def factory_reset(self):
         self.dev.write(bytes(_pkt(170)))

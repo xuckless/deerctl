@@ -167,7 +167,7 @@ PHYS = {
     "SHF_R": ("rshift", "Shift"), "ARR_UP": ("up", "↑"), "ARR_DW": ("down", "↓"),
     "ARR_L": ("left", "←"), "ARR_R": ("right", "→"), "CTRL_L": ("lctrl", "Ctrl"),
     "CTRL_R": ("rctrl", "Ctrl"), "WIN_L": ("lwin", "Win"), "ALT_L": ("lalt", "Alt"),
-    "ALT_R": ("ralt", "Alt"), "SPACE": ("space", ""), "FN1": ("fn", "Fn"),
+    "ALT_R": ("ralt", "Alt"), "SPACE": ("space", "Space"), "FN1": ("fn", "Fn"),
     "FN2": ("fn2", "Fn2"), "APP": ("menu", "Menu"), "PRINT": ("printscreen", "PrtSc"),
     "SWUNG": ("grave", "`"), "NUMS": ("numlock", "Num"), "KP_DEL": ("kp-period", "KP ."),
     "JAP_1_K56": ("ro", "Ro"), "JAP_3_K14": ("yen", "¥"),
@@ -187,3 +187,16 @@ def phys_id(raw: str) -> tuple[str, str]:
 WIDTH = {"BACK": 2, "TAB": 1.5, "SLASH_K29": 1.5, "CAPS": 1.75, "RETURN": 2.25,
          "SHF_L": 2.25, "SHF_R": 1.75, "CTRL_L": 1.25, "WIN_L": 1.25, "ALT_L": 1.25,
          "SPACE": 6.25, "ALT_R": 1, "FN1": 1, "FN2": 1, "CTRL_R": 1}
+
+
+# Built-in Fn shortcuts printed in the manuals (firmware behaviour when a key is
+# left unset on that layer). Keyed by model name -> layer -> physical key id.
+_G65_FN1 = {"esc": "grave", **{str(i): f"f{i}" for i in range(1, 10)}, "0": "f10",
+            "minus": "f11", "equal": "f12", "delete": "insert", "end": "home",
+            "pageup": "printscreen", "pagedown": "scrolllock", "rbracket": "pause",
+            "z": "prev-track", "x": "next-track", "c": "play-pause", "b": "mute",
+            "n": "vol-down", "m": "vol-up", "w": "win-lock"}
+_G65_FN2 = {"r": "led-toggle", "t": "led-toggle", "y": "led-color-cycle", "u": "led-next",
+            "f": "led-bright-down", "g": "led-bright-up", "h": "led-speed-down",
+            "j": "led-speed-up"}
+BUILTIN = {"G65": {"fn1": _G65_FN1, "fn2": _G65_FN2}}

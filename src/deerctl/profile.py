@@ -20,7 +20,17 @@ import sys
 from pathlib import Path
 
 from .keys import WIDTH, Target, find_target, phys_id
-from .protocol import LAYERS, N_KEYS, Keyboard, Model
+from .protocol import LAYERS, N_KEYS, PRESET_COLOURS, Keyboard, Model, effects
+
+
+def parse_colour(c: str) -> tuple[int, int, int]:
+    """'red' / '#ff8800' / 'ff8800' -> (r, g, b)."""
+    c = PRESET_COLOURS.get(c.lower(), c).lstrip("#")
+    if len(c) == 3:
+        c = "".join(ch * 2 for ch in c)
+    if len(c) != 6:
+        raise ValueError(f"bad colour {c!r}; use a name ({', '.join(PRESET_COLOURS)}) or #rrggbb")
+    return int(c[0:2], 16), int(c[2:4], 16), int(c[4:6], 16)
 
 
 def config_dir() -> Path:
@@ -57,6 +67,7 @@ class Profile:
                                                   for k in LAYERS}
         self.actuation = data.get("actuation")
         self.rapid_trigger = data.get("rapid_trigger")
+        self.lighting = data.get("lighting")
         self.keys = physical_keys(model)
         self.by_id = {k["id"]: k for k in self.keys}
 
@@ -77,6 +88,8 @@ class Profile:
             d["actuation"] = self.actuation
         if self.rapid_trigger:
             d["rapid_trigger"] = self.rapid_trigger
+        if self.lighting:
+            d["lighting"] = self.lighting
         return d
 
     def save(self, path: Path | None = None):
@@ -91,9 +104,17 @@ class Profile:
             for k, t in m.items():
                 self.key(k)
                 find_target(t)
-        for section in (self.actuation, self.rapid_trigger):
+        for section in (self.actuation, self.rapid_trigger, self.lighting):
             for k in (section or {}).get("keys", {}):
                 self.key(k)
+        lt = self.lighting or {}
+        if lt.get("color") not in (None, "rainbow"):
+            parse_colour(lt["color"])
+        for c in lt.get("keys", {}).values():
+            parse_colour(c)
+        for f in ("brightness", "speed"):
+            if not 0 <= int(lt.get(f, 0)) <= 9:
+                raise ValueError(f"lighting {f} must be 0..9")
 
     # -- editing ------------------------------------------------------------
     def key(self, kid: str) -> dict:
@@ -143,10 +164,35 @@ class Profile:
                 steps.append(("rt-release", lambda: kb.write_travel(
                     "release", self.travel_values(rt, "release", 0.3))))
             steps.append(("rapid-trigger", lambda: kb.set_rapid_trigger(bool(rt.get("enabled")))))
+        if self.lighting:
+            steps.append(("lighting", lambda: self.apply_lighting(kb)))
         for name, fn in steps:
             if progress:
                 progress(name)
             fn()
+
+    def uses_custom_colours(self) -> bool:
+        lt = self.lighting or {}
+        return (lt.get("effect") == "custom" or bool(lt.get("keys"))
+                or str(lt.get("color", "rainbow")).lower() not in ("rainbow", *PRESET_COLOURS))
+
+    def apply_lighting(self, kb: Keyboard):
+        lt = self.lighting
+        bright, speed = int(lt.get("brightness", 9)), int(lt.get("speed", 5))
+        colour = lt.get("color") or "rainbow"
+        if self.uses_custom_colours():
+            base = parse_colour("ffffff" if colour == "rainbow" else colour)
+            cols = {k["index"]: base for k in self.keys}
+            for kid, c in lt.get("keys", {}).items():
+                cols[self.key(kid)["index"]] = parse_colour(c)
+            kb.set_custom_colours(cols, bright)
+            return
+        table = effects(self.model, kb.info.firmware)
+        eff = table.get(lt.get("effect", "static"))
+        if eff is None:
+            raise ValueError(f"unknown effect {lt.get('effect')!r}; choose from: {', '.join(table)}")
+        code = 0 if colour == "rainbow" else list(PRESET_COLOURS).index(colour.lower()) + 1
+        kb.set_effect(eff["mode"], speed, bright, code)
 
     def describe(self, layer: str, kid: str) -> Target | None:
         t = self.layers[layer].get(kid)

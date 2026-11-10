@@ -41,10 +41,10 @@ def class_body(name):
 
 i = src.find("yC=function"); body = src[i:i + 14000]
 models, last = [], 0
-for m in re.finditer(r"this\.profileObject=new (\w+)\(this\),this\.keyboard_type=(\d+),this\.colourObject=new \w+\(this\),this\.remapObject=new (\w+)", body):
+for m in re.finditer(r"this\.profileObject=new (\w+)\(this\),this\.keyboard_type=(\d+),this\.colourObject=new (\w+)\(this\),this\.remapObject=new (\w+)", body):
     pre = body[last:m.start()]; last = m.end()
     ids = re.findall(r"Q===(\d+)&&A===(\d+)&&e===(\d+)", pre)
-    prof, ktype, remap = m.group(1), int(m.group(2)), m.group(3)
+    prof, ktype, colour, remap = m.group(1), int(m.group(2)), m.group(3), m.group(4)
     pb, rb = class_body(prof), class_body(remap)
     lay = re.search(r"this\.m_kbdLayout=(\[[^\]]*\])", pb or "")
     layout = json.loads(lay.group(1)) if lay else None
@@ -63,6 +63,14 @@ for m in re.finditer(r"this\.profileObject=new (\w+)\(this\),this\.keyboard_type
             if cmd:
                 entries.append({"i": idx, "cmd": cmd, "code": code, "type": typ, "text": text})
         defaults[L] = entries
+    lighting = []
+    cb = src[src.find(f"class {colour} extends"):]
+    cm = re.search(r"this\.m_color_names=\[(.*?)\]\}", cb)
+    for obj in re.findall(r"\{([^{}]*)\}", cm.group(1) if cm else ""):
+        f = dict(re.findall(r'(\w+):("[^"]*"|-?\d+)', obj))
+        lighting.append({"title": f["name"].strip('"').split(".")[-1],
+                         "preset": int(f.get("usePreset", 0)), "colourful": int(f.get("useColourful", 0)),
+                         "code": int(f["code"]) if "code" in f else None})
     nm = re.search(r'super\(A,"ddeer(\w+?)Profile"', pb or "")
     for L in defaults:
         seen, ded = set(), []
@@ -71,7 +79,7 @@ for m in re.finditer(r"this\.profileObject=new (\w+)\(this\),this\.keyboard_type
                 seen.add(e["i"]); ded.append(e)
         defaults[L] = ded
     models.append({"name": nm.group(1) if nm else prof, "ids": [list(map(int, t)) for t in ids], "ktype": ktype,
-                   "profile": prof, "remap": remap, "layout": layout, "defaults": defaults})
+                   "profile": prof, "lighting": lighting, "remap": remap, "layout": layout, "defaults": defaults})
 
 # command groups
 k = src.find("initializeFuncArea(){do"); fb = src[k:src.find("while(!1)", k)]
@@ -82,4 +90,4 @@ for m in re.finditer(r"command_array_group(\d)\.push\(new g\(", fb):
         {"cmd": a[1], "text": a[2], "icon": a[3], "code": a[4], "type": a[5] if len(a) > 5 else 0})
 json.dump({"models": models, "groups": groups}, open(sys.argv[2], "w"), ensure_ascii=False, indent=1)
 for m in models:
-    print(m["name"],m["ktype"], m["ids"], m["profile"], len(m["layout"] or []), {k: len(v) for k, v in m["defaults"].items()})
+    print(m["name"],len(m["lighting"]),m["ktype"], m["ids"], m["profile"], len(m["layout"] or []), {k: len(v) for k, v in m["defaults"].items()})

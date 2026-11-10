@@ -6,285 +6,565 @@
 <title>deerctl</title>
 <style>
 :root {
-  --bg: #f4f3ef; --panel: #ffffff; --ink: #1d1d1b; --muted: #6b6a66; --line: #dcdad3;
-  --key: #fbfaf7; --key-edge: #cfccc3; --accent: #c2410c; --accent-ink: #fff;
-  --mapped: #fff1e6; --sel: #1d4ed8; --ok: #15803d; --err: #b91c1c;
+  --bg: #f5f5f4; --surface: #ffffff; --surface-2: #fafaf9; --ink: #18181b; --ink-2: #52525b;
+  --muted: #a1a1aa; --line: #e4e4e7; --line-2: #d4d4d8;
+  --cap: #ffffff; --cap-edge: #d4d4d8; --cap-shadow: #c4c4cc; --plate: #e7e5e4;
+  --accent: #2563eb; --accent-ink: #ffffff; --accent-soft: #dbeafe; --accent-line: #93c5fd;
+  --ok: #16a34a; --warn: #d97706; --err: #dc2626;
+  --radius: 12px; --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
 }
 @media (prefers-color-scheme: dark) {
-  :root { --bg: #151514; --panel: #1f1f1d; --ink: #ecebe6; --muted: #9b9a94; --line: #34332f;
-    --key: #2a2a27; --key-edge: #3d3c38; --accent: #fb923c; --accent-ink: #1a1a1a;
-    --mapped: #3a2716; --sel: #60a5fa; --ok: #4ade80; --err: #f87171; }
+  :root:not([data-theme="light"]) {
+    --bg: #0c0c0e; --surface: #16161a; --surface-2: #1c1c21; --ink: #f4f4f5; --ink-2: #a1a1aa;
+    --muted: #71717a; --line: #27272a; --line-2: #3f3f46;
+    --cap: #232329; --cap-edge: #34343c; --cap-shadow: #0a0a0c; --plate: #101013;
+    --accent: #60a5fa; --accent-ink: #0b1220; --accent-soft: #172554; --accent-line: #1e40af;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.25);
+  }
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink);
-  font: 14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
-header { display: flex; align-items: baseline; gap: 16px; padding: 18px 24px 8px; flex-wrap: wrap; }
-header h1 { font-size: 18px; margin: 0; letter-spacing: -0.01em; }
-header .meta { color: var(--muted); }
-main { padding: 8px 24px 40px; max-width: 1280px; }
-.bar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 8px 0 14px; }
-.tabs button, .btn { border: 1px solid var(--line); background: var(--panel); color: var(--ink);
-  padding: 7px 14px; border-radius: 8px; cursor: pointer; font: inherit; }
-.tabs button[aria-pressed=true] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 14px/1.45 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+button { font: inherit; color: inherit; }
+[hidden] { display: none !important; }
+
+/* ---------- top bar ---------- */
+.topbar { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 85%, transparent);
+  backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.topbar-inner { max-width: 1200px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 650; font-size: 15px; letter-spacing: -0.01em; }
+.brand-mark { width: 26px; height: 26px; border-radius: 7px; background: var(--ink); color: var(--bg);
+  display: grid; place-items: center; font-size: 13px; font-weight: 700; }
+.device { display: flex; align-items: center; gap: 8px; padding: 4px 10px; border: 1px solid var(--line);
+  border-radius: 999px; background: var(--surface); color: var(--ink-2); font-size: 12.5px; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+.dot.on { background: var(--ok); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ok) 20%, transparent); }
+.grow { flex: 1; }
+.btn { border: 1px solid var(--line-2); background: var(--surface); padding: 7px 13px; border-radius: 8px;
+  cursor: pointer; font-weight: 500; font-size: 13px; transition: background .12s, border-color .12s; }
+.btn:hover:not(:disabled) { background: var(--surface-2); border-color: var(--muted); }
 .btn:disabled { opacity: .45; cursor: default; }
-.spacer { flex: 1; }
-#status { color: var(--muted); min-height: 1.4em; }
-#status.ok { color: var(--ok); } #status.err { color: var(--err); }
-.layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 20px; align-items: start; }
-@media (max-width: 980px) { .layout { grid-template-columns: 1fr; } }
-.card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
-.kbd-wrap { overflow-x: auto; }
-.kbd { --u: 52px; display: flex; flex-direction: column; gap: 4px; width: max-content; padding: 4px; }
-.row { display: flex; gap: 4px; }
-.key { width: calc(var(--u) * var(--w) + 4px * (var(--w) - 1)); height: var(--u);
-  background: var(--key); border: 1px solid var(--key-edge); border-bottom-width: 3px; border-radius: 7px;
-  cursor: pointer; padding: 4px 6px; display: flex; flex-direction: column; justify-content: space-between;
-  text-align: left; color: var(--ink); font: inherit; position: relative; }
+.btn.ghost { border-color: transparent; background: transparent; color: var(--ink-2); }
+.btn.ghost:hover:not(:disabled) { background: var(--surface); border-color: var(--line); color: var(--ink); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
+.btn.primary:hover:not(:disabled) { background: color-mix(in srgb, var(--accent) 88%, black); border-color: transparent; }
+.btn.small { padding: 4px 10px; font-size: 12.5px; }
+.unsaved { font-size: 12.5px; color: var(--warn); display: flex; align-items: center; gap: 6px; }
+.unsaved::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.sep { width: 1px; height: 22px; background: var(--line); }
+
+/* ---------- section nav ---------- */
+main { max-width: 1200px; margin: 0 auto; padding: 20px 24px 64px; }
+.nav { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 20px; }
+.nav button { border: 0; background: none; padding: 10px 14px; cursor: pointer; color: var(--ink-2);
+  font-weight: 550; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.nav button:hover { color: var(--ink); }
+.nav button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+
+.toolbar { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; min-height: 34px; }
+.hint { color: var(--ink-2); font-size: 13px; }
+.seg { display: inline-flex; padding: 3px; background: var(--surface); border: 1px solid var(--line); border-radius: 9px; }
+.seg button { border: 0; background: none; padding: 5px 14px; border-radius: 6px; cursor: pointer; color: var(--ink-2); font-weight: 550; font-size: 13px; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.seg .count { font-size: 11px; margin-left: 6px; padding: 0 6px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+.seg button[aria-pressed="true"] .count { background: color-mix(in srgb, var(--bg) 25%, transparent); color: inherit; }
+
+/* ---------- keyboard ---------- */
+.plate-wrap { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 22px; overflow-x: auto; }
+.plate { --u: 54px; --gap: 5px; margin: 0 auto; width: max-content; padding: 10px; border-radius: 14px; background: var(--plate);
+  display: flex; flex-direction: column; gap: var(--gap); }
+@media (max-width: 1100px) { .plate { --u: 46px; --gap: 4px; } }
+.row { display: flex; gap: var(--gap); }
+.key { width: calc(var(--u) * var(--w) + var(--gap) * (var(--w) - 1)); height: var(--u); position: relative; flex: none;
+  background: var(--cap); border: 1px solid var(--cap-edge); border-radius: 8px; box-shadow: 0 2px 0 var(--cap-shadow);
+  cursor: pointer; padding: 5px 7px; text-align: left; display: flex; flex-direction: column; justify-content: center;
+  transition: transform .06s, box-shadow .06s, border-color .12s; overflow: hidden; }
 .key:hover { border-color: var(--muted); }
-.key .orig { font-size: 11px; color: var(--muted); white-space: nowrap; overflow: hidden; }
-.key .now { font-size: 12.5px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.key.mapped { background: var(--mapped); border-color: var(--accent); }
-.key.sel { outline: 2px solid var(--sel); outline-offset: 1px; }
-.key .ap { position: absolute; right: 5px; top: 3px; font-size: 10px; color: var(--accent); }
-.legend { color: var(--muted); font-size: 12.5px; margin-top: 10px; }
-h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 10px; }
-.grp { margin-bottom: 12px; }
-.grp h3 { font-size: 12px; margin: 0 0 6px; color: var(--muted); font-weight: 600; }
-.chips { display: flex; flex-wrap: wrap; gap: 4px; }
-.chip { border: 1px solid var(--line); background: var(--key); color: var(--ink); border-radius: 6px;
-  padding: 3px 8px; font: inherit; font-size: 12.5px; cursor: pointer; }
-.chip:hover { border-color: var(--muted); }
-.chip.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
-#picker-empty { color: var(--muted); }
-#targets { max-height: 52vh; overflow-y: auto; padding-right: 4px; }
-input[type=search] { width: 100%; padding: 7px 10px; border-radius: 8px; border: 1px solid var(--line);
-  background: var(--bg); color: var(--ink); font: inherit; margin-bottom: 10px; }
-.perf { margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
-.field { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items: center; margin-bottom: 10px; }
-.field label { color: var(--muted); }
-.field input[type=range] { grid-column: 1 / -1; width: 100%; accent-color: var(--accent); }
+.key:active { transform: translateY(1px); box-shadow: 0 1px 0 var(--cap-shadow); }
+.key .main { font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.key .sub { position: absolute; top: 4px; left: 7px; font-size: 10px; color: var(--muted); white-space: nowrap; }
+.key .sub + .main { margin-top: 10px; }
+.key .main.long { font-size: 10.5px; line-height: 1.15; white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow-wrap: anywhere; }
+.key.dim .main { color: var(--muted); font-weight: 500; }
+.key.builtin .main { color: var(--ink-2); font-weight: 500; font-size: 12px; }
+.key.mapped { border-color: var(--accent-line); background: var(--accent-soft); }
+.key.mapped .main { color: var(--accent); }
+.key.sel { outline: 2px solid var(--accent); outline-offset: 1px; }
+.key .badge { position: absolute; right: 6px; bottom: 4px; font-size: 10px; font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.key.lit { background: color-mix(in srgb, var(--glow) 28%, var(--cap)); border-color: color-mix(in srgb, var(--glow) 55%, var(--cap-edge));
+  box-shadow: 0 2px 0 color-mix(in srgb, var(--glow) 70%, var(--cap-shadow)), 0 0 12px -4px var(--glow); }
+.key.lit .dotc { position: absolute; right: 6px; top: 6px; width: 7px; height: 7px; border-radius: 50%; background: var(--glow); }
+.legend { display: flex; gap: 16px; justify-content: center; margin-top: 14px; color: var(--ink-2); font-size: 12.5px; flex-wrap: wrap; }
+.legend:empty { display: none; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 12px; height: 12px; border-radius: 3px; border: 1px solid var(--cap-edge); background: var(--cap); display: inline-block; }
+.legend i.m { background: var(--accent-soft); border-color: var(--accent-line); }
+
+/* ---------- panels ---------- */
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); margin-top: 16px; }
+.panel-head { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.panel-title { font-weight: 650; }
+.panel-body { padding: 16px 18px; }
+.muted { color: var(--ink-2); }
+.empty { padding: 34px 18px; text-align: center; color: var(--ink-2); }
+.arrow { color: var(--muted); margin: 0 6px; }
+.kbd-chip { display: inline-block; padding: 1px 8px; border: 1px solid var(--line-2); border-bottom-width: 2px; border-radius: 6px; font-weight: 600; font-size: 12.5px; background: var(--surface-2); }
+.kbd-chip.to { border-color: var(--accent-line); background: var(--accent-soft); color: var(--accent); }
+
+.cats { display: flex; gap: 2px; align-items: center; overflow-x: auto; padding: 0 12px; border-bottom: 1px solid var(--line); }
+.cats button { border: 0; background: none; padding: 10px 10px; cursor: pointer; color: var(--ink-2); font-size: 13px; white-space: nowrap;
+  border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.cats button[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+.search { margin-left: auto; width: 220px; flex: none; padding: 6px 10px; border: 1px solid var(--line-2); border-radius: 8px; background: var(--surface-2); color: var(--ink); font: inherit; font-size: 13px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); gap: 6px; }
+.opt { border: 1px solid var(--line); background: var(--surface-2); border-radius: 8px; padding: 9px 6px; cursor: pointer; font-size: 12.5px;
+  font-weight: 550; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.opt:hover { border-color: var(--muted); background: var(--surface); }
+.opt.on { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+.opt.def::after { content: " · default"; color: var(--muted); font-weight: 400; font-size: 11px; }
+
+.cols { display: grid; grid-template-columns: 1fr 1fr; }
+.cols > .col { padding: 18px; }
+.cols > .col + .col { border-left: 1px solid var(--line); }
+@media (max-width: 820px) { .cols { grid-template-columns: 1fr; } .cols > .col + .col { border-left: 0; border-top: 1px solid var(--line); } }
+.col h3 { margin: 0 0 4px; font-size: 14px; }
+.col p.desc { margin: 0 0 16px; color: var(--ink-2); font-size: 13px; }
+.field { margin-bottom: 16px; }
+.field-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; font-size: 13px; }
+.field-top label { color: var(--ink-2); }
 .val { font-variant-numeric: tabular-nums; font-weight: 600; }
-.switch { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; cursor: pointer; }
-.switch input { accent-color: var(--accent); width: 16px; height: 16px; }
-.note { color: var(--muted); font-size: 12.5px; }
-.overlay { padding: 60px 24px; text-align: center; color: var(--muted); }
-.overlay pre { text-align: left; display: inline-block; background: var(--panel); border: 1px solid var(--line);
-  padding: 12px 16px; border-radius: 8px; color: var(--ink); white-space: pre-wrap; }
+input[type=range] { width: 100%; accent-color: var(--accent); margin: 0; }
+input[type=range]:disabled { opacity: .4; }
+.switch { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; cursor: pointer; }
+.switch input { appearance: none; width: 36px; height: 20px; border-radius: 999px; background: var(--line-2); position: relative; cursor: pointer; transition: background .15s; flex: none; margin: 0; }
+.switch input::after { content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: #fff; transition: transform .15s; box-shadow: 0 1px 2px rgba(0,0,0,.3); }
+.switch input:checked { background: var(--accent); }
+.switch input:checked::after { transform: translateX(16px); }
+
+.effects { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 6px; }
+.swatches { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.sw { width: 30px; height: 30px; border-radius: 50%; border: 0; cursor: pointer; padding: 0; box-shadow: inset 0 0 0 1px rgba(0,0,0,.12); position: relative; }
+.sw.on::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid var(--accent); }
+.sw.rainbow { background: conic-gradient(#f43f5e, #f59e0b, #84cc16, #06b6d4, #6366f1, #d946ef, #f43f5e); }
+.colorpick { width: 30px; height: 30px; border: 0; padding: 0; border-radius: 50%; overflow: hidden; cursor: pointer; background: none; }
+.colorpick.on { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pick-wrap { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px 3px 3px; border: 1px dashed var(--line-2); border-radius: 999px; font-size: 12.5px; color: var(--ink-2); cursor: pointer; }
+.colorpick::-webkit-color-swatch-wrapper { padding: 0; } .colorpick::-webkit-color-swatch { border: 0; border-radius: 50%; }
+.colorpick::-moz-color-swatch { border: 0; border-radius: 50%; }
+.label-sm { font-size: 11.5px; color: var(--ink-2); margin: 0 0 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+.note { color: var(--ink-2); font-size: 12.5px; margin: 10px 0 0; }
+
+/* ---------- misc ---------- */
+.center { min-height: 60vh; display: grid; place-items: center; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px; max-width: 520px; }
+.card h2 { margin: 0 0 6px; font-size: 18px; }
+.card pre { white-space: pre-wrap; background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 12px; font-size: 12.5px; color: var(--ink-2); }
+.foot { margin-top: 28px; color: var(--muted); font-size: 12px; text-align: center; }
+.foot code { font-size: 11.5px; }
+.toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(12px); opacity: 0; pointer-events: none;
+  background: var(--ink); color: var(--bg); padding: 9px 16px; border-radius: 9px; font-size: 13px; font-weight: 500; transition: .2s; box-shadow: var(--shadow); }
+.toast.show { opacity: 1; transform: translateX(-50%); }
+.toast.err { background: var(--err); color: #fff; }
+.spinner { width: 14px; height: 14px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; display: inline-block; animation: spin .7s linear infinite; vertical-align: -2px; margin-right: 6px; }
+@keyframes spin { to { transform: rotate(360deg); } }
 </style>
 </head>
 <body>
-<header>
-  <h1>deerctl</h1>
-  <span class="meta" id="meta">connecting…</span>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand"><span class="brand-mark">d</span>deerctl</div>
+    <div class="device"><span class="dot" id="dot"></span><span id="device">Connecting…</span></div>
+    <div class="grow"></div>
+    <span class="unsaved" id="unsaved" hidden>Unsaved changes</span>
+    <button class="btn ghost" id="import" title="Load a profile from a JSON file">Import</button>
+    <button class="btn ghost" id="export" title="Save this profile as a JSON file">Export</button>
+    <span class="sep"></span>
+    <button class="btn" id="revert" disabled>Discard</button>
+    <button class="btn primary" id="apply" disabled>Save to keyboard</button>
+  </div>
 </header>
+
 <main>
-  <div id="disconnected" class="overlay" hidden>
-    <p>Keyboard not available.</p>
-    <pre id="errtext"></pre>
-    <p><button class="btn" onclick="load()">Retry</button></p>
-  </div>
-  <div id="app" hidden>
-    <div class="bar">
-      <div class="tabs" role="group" aria-label="Layer">
-        <button data-layer="base" aria-pressed="true">Base layer</button>
-        <button data-layer="fn1" aria-pressed="false">Fn layer</button>
-        <button data-layer="fn2" aria-pressed="false">Fn2 layer</button>
-      </div>
-      <span class="spacer"></span>
-      <span id="status"></span>
-      <button class="btn" id="import">Import…</button>
-      <button class="btn" id="export">Export</button>
-      <button class="btn" id="revert" disabled>Revert</button>
-      <button class="btn primary" id="apply" disabled>Apply to keyboard</button>
+  <section id="offline" class="center" hidden>
+    <div class="card">
+      <h2>Keyboard not available</h2>
+      <p class="muted">Plug in your Drunkdeer keyboard with a cable, then retry.</p>
+      <pre id="errtext"></pre>
+      <button class="btn primary" onclick="load()">Retry</button>
     </div>
-    <div class="layout">
-      <section class="card">
-        <div class="kbd-wrap"><div class="kbd" id="kbd"></div></div>
-        <div class="legend" id="legend"></div>
-      </section>
-      <aside class="card">
-        <h2 id="picker-title">Remap</h2>
-        <p id="picker-empty">Click a key on the left, then pick what it should do.</p>
-        <div id="picker" hidden>
-          <div class="bar" style="margin-top:0">
-            <button class="btn" id="reset-key">Reset key</button>
+  </section>
+
+  <section id="app" hidden>
+    <nav class="nav" role="tablist">
+      <button role="tab" data-view="keymap" aria-selected="true">Keymap</button>
+      <button role="tab" data-view="perf" aria-selected="false">Performance</button>
+      <button role="tab" data-view="light" aria-selected="false">Lighting</button>
+    </nav>
+
+    <div class="toolbar">
+      <div class="seg" id="layers" data-for="keymap">
+        <button data-layer="base" aria-pressed="true">Base<span class="count" data-c="base"></span></button>
+        <button data-layer="fn1" aria-pressed="false">Fn<span class="count" data-c="fn1"></span></button>
+        <button data-layer="fn2" aria-pressed="false">Fn2<span class="count" data-c="fn2"></span></button>
+      </div>
+      <span class="hint" id="hint"></span>
+      <div class="grow"></div>
+      <div id="perf-sel" data-for="perf" hidden>
+        <button class="btn small" id="sel-all">Select all</button>
+        <button class="btn small" id="sel-none">Clear selection</button>
+      </div>
+    </div>
+
+    <div class="plate-wrap"><div class="plate" id="plate"></div></div>
+    <div class="legend" id="legend"></div>
+
+    <div class="panel" id="keymap-panel" data-for="keymap"></div>
+
+    <div class="panel" id="perf-panel" data-for="perf" hidden>
+      <div class="cols">
+        <div class="col">
+          <h3>Actuation point</h3>
+          <p class="desc">How far a key travels before it registers.</p>
+          <label class="switch"><span>Manage actuation from this app</span><input type="checkbox" id="ap-on"></label>
+          <div class="field">
+            <div class="field-top"><label for="ap">All keys</label><span class="val" id="ap-v"></span></div>
+            <input type="range" id="ap">
           </div>
-          <input type="search" id="filter" placeholder="Filter (e.g. ctrl, vol, f13)…">
-          <div id="targets"></div>
-          <div id="key-ap" style="margin-top:14px"></div>
+          <div class="field" id="ap-sel-field">
+            <div class="field-top"><label for="ap-sel" id="ap-sel-l">Selected keys</label><span class="val" id="ap-sel-v"></span></div>
+            <input type="range" id="ap-sel">
+            <div style="margin-top:8px"><button class="btn small" id="ap-sel-reset">Use the “All keys” value</button></div>
+          </div>
         </div>
-      </aside>
+        <div class="col">
+          <h3>Rapid Trigger</h3>
+          <p class="desc">Re-trigger as soon as a key moves, instead of at a fixed point.</p>
+          <label class="switch"><span>Enabled</span><input type="checkbox" id="rt-on"></label>
+          <div class="field">
+            <div class="field-top"><label for="rt-p">Press sensitivity</label><span class="val" id="rt-p-v"></span></div>
+            <input type="range" id="rt-p">
+          </div>
+          <div class="field">
+            <div class="field-top"><label for="rt-r">Release sensitivity</label><span class="val" id="rt-r-v"></span></div>
+            <input type="range" id="rt-r">
+          </div>
+        </div>
+      </div>
     </div>
-    <section class="card perf">
-      <div>
-        <h2>Actuation</h2>
-        <label class="switch"><input type="checkbox" id="ap-on"> Set actuation point</label>
-        <div class="field">
-          <label for="ap">All keys</label><span class="val" id="ap-v"></span>
-          <input type="range" id="ap">
-        </div>
-        <p class="note">Per-key overrides: select a key above. Keys with an override show a dot.</p>
-      </div>
-      <div>
-        <h2>Rapid Trigger</h2>
-        <label class="switch"><input type="checkbox" id="rt-on"> Enabled</label>
-        <div class="field">
-          <label for="rt-p">Press sensitivity</label><span class="val" id="rt-p-v"></span>
-          <input type="range" id="rt-p">
-        </div>
-        <div class="field">
-          <label for="rt-r">Release sensitivity</label><span class="val" id="rt-r-v"></span>
-          <input type="range" id="rt-r">
-        </div>
-      </div>
-      <div>
-        <h2>About</h2>
-        <p class="note" id="about"></p>
-      </div>
-    </section>
-  </div>
+
+    <div class="panel" id="light-panel" data-for="light" hidden></div>
+
+    <p class="foot" id="foot"></p>
+  </section>
 </main>
+<div class="toast" id="toast"></div>
 <input type="file" id="file" accept="application/json" hidden>
+
 <script>
 const TOKEN = "__TOKEN__";
-let S = null, P = null, saved = "", layer = "base", sel = null;
+let S = null, P = null, saved = "";
+let view = "keymap", layer = "base", sel = null, cat = null, query = "";
+const perfSel = new Set();
+let paint = "#ff3b30";
 const $ = id => document.getElementById(id);
 const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const mm = v => (+v).toFixed(2) + " mm";
+const dirty = () => JSON.stringify(P) !== saved;
+const label = n => S.labels[n] || n.replace(/^hid:/, "HID ");
+const keyById = id => S.keys.find(k => k.id === id);
+const pretty = s => s.replace(/-/g, " ").replace(/^./, c => c.toUpperCase());
+
+function toast(msg, err) {
+  const t = $("toast"); t.textContent = msg; t.className = "toast show" + (err ? " err" : "");
+  clearTimeout(toast.t); toast.t = setTimeout(() => t.className = "toast" + (err ? " err" : ""), err ? 5000 : 2200);
+}
+function markDirty() { const d = dirty(); $("apply").disabled = $("revert").disabled = !d; $("unsaved").hidden = !d; }
 
 async function load() {
-  $("meta").textContent = "connecting…";
-  const r = await fetch("/api/state", { headers: { "X-Token": TOKEN } });
-  S = await r.json();
+  $("device").textContent = "Connecting…"; $("dot").className = "dot";
+  try {
+    const r = await fetch("/api/state", { headers: { "X-Token": TOKEN } });
+    S = await r.json();
+  } catch (e) { S = { connected: false, error: "deerctl is not running." }; }
   if (!S.connected) {
-    $("app").hidden = true; $("disconnected").hidden = false;
-    $("errtext").textContent = S.error; $("meta").textContent = "no keyboard";
-    return;
+    $("app").hidden = true; $("offline").hidden = false; $("errtext").textContent = S.error;
+    $("device").textContent = "Not connected"; return;
   }
-  $("disconnected").hidden = true; $("app").hidden = false;
-  $("meta").textContent = `${S.model} · firmware ${S.firmware}`;
+  $("offline").hidden = true; $("app").hidden = false;
+  $("dot").className = "dot on";
+  $("device").textContent = `Drunkdeer ${S.model} · firmware ${S.firmware}`;
   P = JSON.parse(JSON.stringify(S.profile));
   for (const l of ["base", "fn1", "fn2"]) P.layers[l] = P.layers[l] || {};
   saved = JSON.stringify(P);
-  $("about").textContent = `Profile file: ${S.path}. The keyboard can't report its remaps back, so this file is the source of truth; Apply rewrites all layers.`;
-  setupPerf(); render();
+  cat = Object.keys(S.targets)[0];
+  $("foot").replaceChildren("Profile: ", el("code", null, S.path),
+    " · Remaps can't be read back from the keyboard, so this file is the source of truth.");
+  setupPerf();
+  fromHash();
+  refresh();
+}
+function fromHash() {
+  const [v, l, k] = location.hash.slice(1).split("/");
+  if (["keymap", "perf", "light"].includes(v)) view = v;
+  if (["base", "fn1", "fn2"].includes(l)) layer = l;
+  if (k && keyById(k)) sel = k;
 }
 
-function label(name) { return S.labels[name] || name.replace(/^hid:/, "HID "); }
-function dirty() { return JSON.stringify(P) !== saved; }
+/* ------------------------------------------------------------ rendering */
+function refresh() {
+  history.replaceState(null, "", "#" + (view === "keymap" ? `keymap/${layer}${sel ? "/" + sel : ""}` : view));
+  document.querySelectorAll("[data-for]").forEach(e => e.hidden = e.dataset.for !== view);
+  document.querySelectorAll(".nav button").forEach(b => b.setAttribute("aria-selected", b.dataset.view === view));
+  document.querySelectorAll("#layers button").forEach(b => b.setAttribute("aria-pressed", b.dataset.layer === layer));
+  for (const c of document.querySelectorAll("[data-c]")) {
+    const n = Object.keys(P.layers[c.dataset.c]).length; c.textContent = n || ""; c.hidden = !n;
+  }
+  $("hint").textContent = {
+    keymap: layer === "base" ? "Click a key, then choose what it should do."
+      : `Active while holding ${layer === "fn1" ? "Fn" : "Fn2 (Menu)"}. Grey labels are built-in shortcuts.`,
+    perf: P.actuation ? "Click keys to give them their own actuation point." : "Turn on actuation below to edit it.",
+    light: isCustom() ? "Click keys to paint them with the brush colour." : "Choose an effect, colour, brightness and speed.",
+  }[view];
+  renderPlate();
+  if (view === "keymap") renderKeymapPanel();
+  if (view === "perf") syncPerf();
+  if (view === "light") renderLight();
+  markDirty();
+}
 
-function render() {
-  const kbd = $("kbd"); kbd.replaceChildren();
+function renderPlate() {
+  const plate = $("plate"); plate.replaceChildren();
   const rows = {};
   for (const k of S.keys) (rows[k.row] ||= []).push(k);
-  const ap = P.actuation?.keys || {};
   for (const r of Object.keys(rows).sort((a, b) => a - b)) {
     const row = el("div", "row");
-    for (const k of rows[r].sort((a, b) => a.col - b.col)) {
-      const m = P.layers[layer][k.id];
-      const b = el("button", "key" + (m ? " mapped" : "") + (sel === k.id ? " sel" : ""));
-      b.style.setProperty("--w", k.width);
-      b.title = k.id;
-      b.append(el("span", "orig", k.label || k.id));
-      const now = m ? label(m) : (layer === "base" ? "" : "");
-      b.append(el("span", "now", m ? "→ " + now : ""));
-      if (ap[k.id] != null) b.append(el("span", "ap", "●"));
-      b.onclick = () => { sel = k.id; render(); picker(); };
-      row.append(b);
-    }
-    kbd.append(row);
+    for (const k of rows[r].sort((a, b) => a.col - b.col)) row.append(keycap(k));
+    plate.append(row);
   }
-  const n = Object.keys(P.layers[layer]).length;
-  $("legend").textContent = layer === "base"
-    ? `${n} key${n === 1 ? "" : "s"} remapped on the base layer.`
-    : `${n} key${n === 1 ? "" : "s"} set on the ${layer === "fn1" ? "Fn" : "Fn2"} layer (while holding ${layer === "fn1" ? "Fn" : "Fn2"}). Unset keys keep the keyboard's built-in Fn functions.`;
-  $("apply").disabled = $("revert").disabled = !dirty();
+  const lg = $("legend"); lg.replaceChildren();
+  const item = (cls, text) => { const s = el("span"); s.append(el("i", cls), text); return s; };
+  if (view === "keymap") lg.append(item("", "Default"), item("m", layer === "base" ? "Remapped" : "Set on this layer"));
+  if (view === "perf" && P.actuation) lg.append(item("", `All keys: ${mm(P.actuation.default)}`), item("m", "Own actuation point"));
 }
 
-function picker() {
-  if (!sel) return;
-  const k = S.keys.find(x => x.id === sel);
-  $("picker-empty").hidden = true; $("picker").hidden = false;
-  $("picker-title").textContent = `${k.label || k.id} · ${layer === "base" ? "Base" : layer === "fn1" ? "Fn" : "Fn2"} layer`;
-  const cur = P.layers[layer][sel] || (layer === "base" ? k.default : null);
-  const q = $("filter").value.trim().toLowerCase();
-  const box = $("targets"); box.replaceChildren();
-  for (const [g, items] of Object.entries(S.targets)) {
-    const vis = items.filter(t => !q || t.name.includes(q) || t.label.toLowerCase().includes(q));
-    if (!vis.length) continue;
-    const grp = el("div", "grp"); grp.append(el("h3", null, g));
-    const chips = el("div", "chips");
-    for (const t of vis) {
-      const c = el("button", "chip" + (t.name === cur ? " on" : ""), t.label);
-      c.title = t.name;
-      c.onclick = () => {
-        if (layer === "base" && t.name === k.default) delete P.layers[layer][sel];
-        else P.layers[layer][sel] = t.name;
-        render(); picker();
-      };
-      chips.append(c);
+const cap = (text, cls = "main") => el("span", cls + (cls === "main" && text.length > 6 ? " long" : ""), text);
+function keycap(k) {
+  const b = el("button", "key"); b.style.setProperty("--w", k.width); b.title = k.id;
+  const name = k.label || k.id;
+  if (view === "keymap") {
+    const m = P.layers[layer][k.id];
+    const bi = (S.builtin[layer] || {})[k.id];
+    if (m) { b.classList.add("mapped"); b.append(el("span", "sub", name), cap(label(m))); }
+    else if (layer !== "base" && bi) { b.classList.add("builtin"); b.append(el("span", "sub", name), cap(label(bi))); }
+    else if (layer !== "base") { b.classList.add("dim"); b.append(el("span", "main", name)); }
+    else b.append(el("span", "main", name));
+    if (sel === k.id) b.classList.add("sel");
+    b.onclick = () => {
+      sel = sel === k.id ? null : k.id; query = "";
+      const eff = sel && (P.layers[layer][sel] || (layer === "base" ? k.default : (S.builtin[layer] || {})[sel]));
+      const g = eff && Object.keys(S.targets).find(g => S.targets[g].some(t => t.name === eff));
+      if (g) cat = g;
+      refresh();
+    };
+  } else if (view === "perf") {
+    b.append(el("span", "main", name));
+    const v = P.actuation?.keys?.[k.id];
+    if (v != null) b.append(el("span", "badge", (+v).toFixed(2)));
+    if (v != null) b.classList.add("mapped");
+    if (perfSel.has(k.id)) b.classList.add("sel");
+    b.onclick = () => { if (!P.actuation) return; perfSel.has(k.id) ? perfSel.delete(k.id) : perfSel.add(k.id); refresh(); };
+  } else {
+    b.append(el("span", "main", name));
+    const l = P.lighting;
+    if (l && l.effect !== "off") {
+      const c = isCustom() ? hexOf(l.keys?.[k.id] || l.color) : l.color === "rainbow" ? null : hexOf(l.color);
+      if (c) { b.classList.add("lit"); b.style.setProperty("--glow", c); if (isCustom() && l.keys?.[k.id]) b.append(el("span", "dotc")); }
     }
-    grp.append(chips); box.append(grp);
+    b.onclick = () => { if (!isCustom()) return; (lt().keys ||= {})[k.id] = paint; refresh(); };
   }
-  // per-key actuation
-  const kap = $("key-ap"); kap.replaceChildren();
-  if (P.actuation) {
-    const v = P.actuation.keys?.[sel];
-    const f = el("div", "field");
-    const lab = el("label", null, "Actuation for this key"); const val = el("span", "val");
-    const inp = el("input"); inp.type = "range"; rangeAttrs(inp, 0.2, S.travel.ap_max);
-    inp.value = v ?? P.actuation.default; val.textContent = v != null ? mm(v) : "default";
-    inp.oninput = () => { (P.actuation.keys ||= {})[sel] = +inp.value; val.textContent = mm(inp.value); render(); };
-    const clr = el("button", "btn", "Use default"); clr.style.marginTop = "6px";
-    clr.onclick = () => { delete P.actuation.keys?.[sel]; render(); picker(); };
-    f.append(lab, val, inp); kap.append(f, clr);
-  }
+  return b;
 }
 
-const mm = v => (+v).toFixed(2) + " mm";
-function rangeAttrs(inp, min, max) { inp.min = min; inp.max = max; inp.step = Math.max(S.travel.step, 0.01); }
+/* ------------------------------------------------------------ keymap */
+function renderKeymapPanel() {
+  const p = $("keymap-panel"); p.replaceChildren();
+  if (!sel) { p.append(el("div", "empty", "Select a key on the keyboard above to change what it does.")); return; }
+  const k = keyById(sel);
+  const cur = P.layers[layer][sel];
+  const effective = cur || (layer === "base" ? k.default : (S.builtin[layer] || {})[sel]);
+  const head = el("div", "panel-head");
+  const t = el("div", "panel-title");
+  t.append(el("span", "kbd-chip", k.label || k.id), el("span", "arrow", "→"),
+           el("span", "kbd-chip" + (cur ? " to" : ""), effective ? label(effective) : "Nothing"));
+  head.append(t);
+  if (layer !== "base") head.append(el("span", "muted", layer === "fn1" ? "while holding Fn" : "while holding Fn2"));
+  head.append(el("div", "grow"));
+  if (cur) {
+    const r = el("button", "btn small", layer === "base" ? "Reset to default" : "Remove override");
+    r.onclick = () => { delete P.layers[layer][sel]; refresh(); }; head.append(r);
+  }
+  p.append(head);
 
+  const cats = el("div", "cats");
+  const groups = Object.keys(S.targets);
+  for (const g of groups) {
+    const b = el("button", null, g); b.setAttribute("aria-selected", !query && g === cat);
+    b.onclick = () => { cat = g; query = ""; refresh(); }; cats.append(b);
+  }
+  const s = el("input", "search"); s.type = "search"; s.placeholder = "Search all keys…"; s.value = query;
+  s.oninput = () => {
+    query = s.value.trim().toLowerCase(); renderKeymapPanel();
+    const n = document.querySelector("#keymap-panel .search"); n.focus(); n.setSelectionRange(n.value.length, n.value.length);
+  };
+  cats.append(s); p.append(cats);
+
+  const body = el("div", "panel-body"); const grid = el("div", "grid");
+  const items = query
+    ? groups.flatMap(g => S.targets[g]).filter(t => t.name.includes(query) || t.label.toLowerCase().includes(query))
+    : S.targets[cat];
+  for (const t of items) {
+    const o = el("button", "opt" + (t.name === effective ? " on" : "") + (layer === "base" && t.name === k.default ? " def" : ""), t.label);
+    o.title = t.name;
+    o.onclick = () => {
+      if (layer === "base" && t.name === k.default) delete P.layers[layer][sel];
+      else P.layers[layer][sel] = t.name;
+      refresh();
+    };
+    grid.append(o);
+  }
+  if (!items.length) body.append(el("div", "muted", "No matches.")); else body.append(grid);
+  p.append(body);
+}
+
+/* ------------------------------------------------------------ performance */
+function setRange(r, min, max) { r.min = min; r.max = max; r.step = Math.max(S.travel.step, 0.01); }
 function setupPerf() {
   const t = S.travel;
-  rangeAttrs($("ap"), 0.2, t.ap_max); rangeAttrs($("rt-p"), 0.1, t.rt_max); rangeAttrs($("rt-r"), 0.1, t.rt_max);
-  syncPerf();
-  $("ap-on").onchange = e => { P.actuation = e.target.checked ? { default: 2.0 > t.ap_max ? t.ap_max : 2.0, keys: {} } : undefined; if (!P.actuation) delete P.actuation; syncPerf(); render(); picker(); };
-  $("ap").oninput = e => { P.actuation.default = +e.target.value; syncPerf(); render(); };
-  $("rt-on").onchange = e => { P.rapid_trigger = { press: 0.3, release: 0.3, keys: {}, ...(P.rapid_trigger || {}), enabled: e.target.checked }; syncPerf(); render(); };
-  $("rt-p").oninput = e => { P.rapid_trigger.press = +e.target.value; syncPerf(); render(); };
-  $("rt-r").oninput = e => { P.rapid_trigger.release = +e.target.value; syncPerf(); render(); };
+  setRange($("ap"), 0.2, t.ap_max); setRange($("ap-sel"), 0.2, t.ap_max);
+  setRange($("rt-p"), 0.1, t.rt_max); setRange($("rt-r"), 0.1, t.rt_max);
+  $("ap-on").onchange = e => { if (e.target.checked) P.actuation = { default: Math.min(2.0, t.ap_max), keys: {} }; else { delete P.actuation; perfSel.clear(); } refresh(); };
+  $("ap").oninput = e => { P.actuation.default = +e.target.value; refresh(); };
+  $("ap-sel").oninput = e => { for (const id of perfSel) (P.actuation.keys ||= {})[id] = +e.target.value; refresh(); };
+  $("ap-sel-reset").onclick = () => { for (const id of perfSel) delete P.actuation.keys?.[id]; refresh(); };
+  $("rt-on").onchange = e => { P.rapid_trigger = { press: 0.3, release: 0.3, ...(P.rapid_trigger || {}), enabled: e.target.checked }; refresh(); };
+  const rt = () => P.rapid_trigger ||= { enabled: S.rapid_trigger_on, press: 0.3, release: 0.3 };
+  $("rt-p").oninput = e => { rt().press = +e.target.value; refresh(); };
+  $("rt-r").oninput = e => { rt().release = +e.target.value; refresh(); };
+  $("sel-all").onclick = () => { if (!P.actuation) return; S.keys.forEach(k => perfSel.add(k.id)); refresh(); };
+  $("sel-none").onclick = () => { perfSel.clear(); refresh(); };
 }
 function syncPerf() {
   const a = P.actuation, r = P.rapid_trigger;
   $("ap-on").checked = !!a; $("ap").disabled = !a;
-  $("ap").value = a?.default ?? 2.0; $("ap-v").textContent = a ? mm(a.default) : "keyboard's setting";
-  const rton = !!r?.enabled;
-  $("rt-on").checked = r ? rton : S.rapid_trigger_on;
+  $("ap").value = a?.default ?? 2.0; $("ap-v").textContent = a ? mm(a.default) : "Keyboard's current";
+  const n = perfSel.size;
+  $("ap-sel-field").hidden = !a || !n;
+  if (a && n) {
+    $("ap-sel-l").textContent = `${n} selected key${n > 1 ? "s" : ""}`;
+    const vals = [...perfSel].map(id => a.keys?.[id] ?? a.default);
+    $("ap-sel").value = vals[0]; $("ap-sel-v").textContent = vals.every(v => v === vals[0]) ? mm(vals[0]) : "Mixed";
+  }
+  const rtOn = r ? !!r.enabled : S.rapid_trigger_on;
+  $("rt-on").checked = rtOn;
   for (const [id, f] of [["rt-p", "press"], ["rt-r", "release"]]) {
-    $(id).disabled = !rton; $(id).value = r?.[f] ?? 0.3; $(id + "-v").textContent = mm(r?.[f] ?? 0.3);
+    $(id).disabled = !rtOn; $(id).value = r?.[f] ?? 0.3; $(id + "-v").textContent = mm(r?.[f] ?? 0.3);
   }
 }
 
-function status(msg, cls) { const s = $("status"); s.textContent = msg; s.className = cls || ""; }
+/* ------------------------------------------------------------ lighting */
+const PRESETS = () => Object.keys(S.colours);
+const lt = () => P.lighting ||= { effect: "static", color: "rainbow", brightness: 9, speed: 5 };
+function isCustom() {
+  const l = P?.lighting; if (!l) return false;
+  return l.effect === "custom" || Object.keys(l.keys || {}).length > 0
+    || !["rainbow", ...PRESETS()].includes(String(l.color || "rainbow").toLowerCase());
+}
+function hexOf(c) { if (!c || c === "rainbow") return "#ffffff"; const p = S.colours[c.toLowerCase()]; return "#" + (p || c.replace("#", "")); }
+function inkFor(hex) { const n = parseInt(hex.slice(1), 16); const y = ((n >> 16) * 299 + ((n >> 8) & 255) * 587 + (n & 255) * 114) / 1000; return y > 150 ? "#111" : "#fff"; }
 
+function renderLight() {
+  const p = $("light-panel"); p.replaceChildren();
+  const l = P.lighting;
+  const head = el("div", "panel-head");
+  head.append(el("div", "panel-title", "Lighting"), el("div", "grow"));
+  const sw = el("label", "switch"); sw.style.margin = "0";
+  const cb = el("input"); cb.type = "checkbox"; cb.checked = !!l;
+  cb.onchange = () => { if (cb.checked) lt(); else delete P.lighting; refresh(); };
+  sw.append(el("span", "muted", "Manage lighting from this app"), cb); head.append(sw);
+  p.append(head);
+  if (!l) { p.append(el("div", "empty", "The keyboard keeps its current lighting. Turn on “Manage lighting” to pick an effect or paint keys.")); return; }
+
+  const custom = isCustom();
+  const cols = el("div", "cols");
+  const c1 = el("div", "col");
+  c1.append(el("p", "label-sm", "Effect"));
+  const eff = el("div", "effects");
+  const curEff = custom ? "custom" : l.effect;
+  for (const e of S.effects) {
+    const b = el("button", "opt" + (e === curEff ? " on" : ""), e === "custom" ? "Custom (per key)" : pretty(e));
+    b.onclick = () => {
+      l.effect = e;
+      if (e !== "custom") { delete l.keys; if (!["rainbow", ...PRESETS()].includes(String(l.color).toLowerCase())) l.color = "rainbow"; }
+      else if (l.color === "rainbow") l.color = "white";
+      refresh();
+    };
+    eff.append(b);
+  }
+  c1.append(eff); cols.append(c1);
+
+  const c2 = el("div", "col");
+  if (l.effect !== "off") {
+    c2.append(el("p", "label-sm", custom ? "Base colour" : "Colour"));
+    const sws = el("div", "swatches");
+    const cur = String(l.color || "rainbow").toLowerCase();
+    for (const c of custom ? PRESETS() : ["rainbow", ...PRESETS()]) {
+      const s = el("button", "sw" + (c === "rainbow" ? " rainbow" : "") + (c === cur ? " on" : "")); s.title = pretty(c);
+      if (c !== "rainbow") s.style.background = "#" + S.colours[c];
+      s.onclick = () => { l.color = c; refresh(); }; sws.append(s);
+    }
+    const pick = el("input", "colorpick" + (cur.startsWith("#") ? " on" : "")); pick.type = "color"; pick.title = "Any colour";
+    pick.value = cur.startsWith("#") ? cur : "#ff8800"; pick.onchange = () => { l.color = pick.value; refresh(); };
+    const pw = el("label", "pick-wrap"); pw.append(pick, "Custom…"); sws.append(pw); c2.append(sws);
+    if (!custom) c2.append(el("p", "note", "Colours outside the presets switch to per-key custom mode (static)."));
+  }
+  if (custom) {
+    const pr = el("div"); pr.style.marginTop = "20px";
+    pr.append(el("p", "label-sm", "Paint brush"));
+    const row = el("div", "swatches");
+    const pc = el("input", "colorpick"); pc.type = "color"; pc.value = paint; pc.oninput = () => { paint = pc.value; };
+    const clr = el("button", "btn small", "Clear painted keys"); clr.onclick = () => { delete l.keys; refresh(); };
+    row.append(pc, el("span", "muted", "Pick a colour, then click keys"), el("div", "grow"), clr);
+    pr.append(row); c2.append(pr);
+  }
+  const sl = el("div"); sl.style.marginTop = "20px";
+  for (const [f, name] of [["brightness", "Brightness"], ["speed", "Speed"]]) {
+    if (l.effect === "off") break;
+    if (f === "speed" && (custom || l.effect === "static")) continue;
+    const fd = el("div", "field"); const top = el("div", "field-top"); const v = el("span", "val", String(l[f] ?? 5));
+    top.append(el("label", null, name), v);
+    const r = el("input"); r.type = "range"; r.min = 0; r.max = 9; r.step = 1; r.value = l[f] ?? 5;
+    r.oninput = () => { l[f] = +r.value; v.textContent = r.value; markDirty(); };
+    fd.append(top, r); sl.append(fd);
+  }
+  if (l.effect === "off") c2.append(el("div", "empty", "Lighting will be turned off."));
+  c2.append(sl); cols.append(c2); p.append(cols);
+}
+
+/* ------------------------------------------------------------ actions */
 $("apply").onclick = async () => {
-  $("apply").disabled = true; status("Writing to keyboard…");
+  const btn = $("apply"); btn.disabled = true; btn.innerHTML = '<span class="spinner"></span>Saving…';
   try {
     const r = await fetch("/api/save", { method: "POST", headers: { "X-Token": TOKEN, "Content-Type": "application/json" }, body: JSON.stringify({ ...P, apply: true }) });
     const j = await r.json();
     if (!j.ok) throw new Error(j.error);
-    saved = JSON.stringify(P); status("Applied ✓", "ok");
-  } catch (e) { status("Failed: " + e.message, "err"); }
-  render();
+    saved = JSON.stringify(P); toast("Saved to keyboard");
+  } catch (e) { toast("Couldn't save: " + e.message, true); }
+  btn.textContent = "Save to keyboard"; refresh();
 };
-$("revert").onclick = () => { P = JSON.parse(saved); setupPerf(); render(); picker(); status(""); };
-$("reset-key").onclick = () => { delete P.layers[layer][sel]; render(); picker(); };
-$("filter").oninput = picker;
-for (const b of document.querySelectorAll(".tabs button")) b.onclick = () => {
-  layer = b.dataset.layer;
-  document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-pressed", x === b));
-  render(); picker();
-};
+$("revert").onclick = () => { P = JSON.parse(saved); perfSel.clear(); refresh(); toast("Changes discarded"); };
+document.querySelectorAll(".nav button").forEach(b => b.onclick = () => { view = b.dataset.view; refresh(); });
+document.querySelectorAll("#layers button").forEach(b => b.onclick = () => { layer = b.dataset.layer; refresh(); });
 $("export").onclick = () => {
   const a = el("a"); a.href = URL.createObjectURL(new Blob([JSON.stringify(P, null, 2)], { type: "application/json" }));
   a.download = `deerctl-${S.model}.json`; a.click();
@@ -293,15 +573,15 @@ $("import").onclick = () => $("file").click();
 $("file").onchange = async e => {
   try {
     const d = JSON.parse(await e.target.files[0].text());
-    if (d.model && d.model !== S.model) throw new Error(`file is for ${d.model}`);
+    if (d.model && d.model !== S.model) throw new Error(`that file is for a ${d.model}`);
     P = { model: S.model, layers: { base: {}, fn1: {}, fn2: {}, ...(d.layers || {}) } };
-    if (d.actuation) P.actuation = d.actuation;
-    if (d.rapid_trigger) P.rapid_trigger = d.rapid_trigger;
-    setupPerf(); render(); picker(); status("Imported — click Apply to write it.");
-  } catch (err) { status("Import failed: " + err.message, "err"); }
+    for (const f of ["actuation", "rapid_trigger", "lighting"]) if (d[f]) P[f] = d[f];
+    perfSel.clear(); refresh(); toast("Imported. Save to keyboard to apply it");
+  } catch (err) { toast("Import failed: " + err.message, true); }
   e.target.value = "";
 };
-window.onbeforeunload = () => dirty() ? true : undefined;
+document.addEventListener("keydown", e => { if (e.key === "Escape" && e.target.tagName !== "INPUT") { sel = null; perfSel.clear(); refresh(); } });
+window.onbeforeunload = () => (P && dirty()) ? true : undefined;
 load();
 </script>
 </body>

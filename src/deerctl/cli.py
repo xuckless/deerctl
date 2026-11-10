@@ -11,7 +11,7 @@ from . import __version__
 from .hidio import DeviceError, find_device, list_devices
 from .keys import TARGETS
 from .profile import Profile
-from .protocol import LAYERS, MODELS, Keyboard, Model, actuation_mode
+from .protocol import LAYERS, MODELS, PRESET_COLOURS, Keyboard, Model, actuation_mode, effects
 
 UDEV_RULE = ('# Drunkdeer keyboards: let the logged-in user reach the config interface\n'
              '# (used by deerctl and by WebHID in Chrome/Edge).\n'
@@ -78,6 +78,9 @@ def cmd_show(a):
         empty = False
     if prof.rapid_trigger:
         print(f"[rapid_trigger] {prof.rapid_trigger}")
+        empty = False
+    if prof.lighting:
+        print(f"[lighting] {prof.lighting}")
         empty = False
     if empty:
         print("No remaps — keyboard uses its defaults.")
@@ -153,6 +156,36 @@ def cmd_rt(a):
         if a.release is not None:
             rt["release"] = a.release
         p.rapid_trigger = rt
+    _edit_and_apply(a, edit)
+
+
+def cmd_light(a):
+    if a.list:
+        with find_device() as dev:
+            kb = Keyboard(dev)
+            kb.identify()
+            print("Effects:", " ".join(effects(kb.model, kb.info.firmware)), "custom")
+            print("Colours: rainbow", " ".join(PRESET_COLOURS), "or #rrggbb")
+        return
+
+    def edit(p: Profile):
+        lt = p.lighting or {"effect": "static", "color": "rainbow", "brightness": 9, "speed": 5}
+        if a.effect:
+            lt["effect"] = a.effect
+        if a.color:
+            lt["color"] = a.color
+        if a.brightness is not None:
+            lt["brightness"] = a.brightness
+        if a.speed is not None:
+            lt["speed"] = a.speed
+        if a.clear_keys:
+            lt.pop("keys", None)
+        for pair in a.key or []:
+            k, _, c = pair.partition("=")
+            lt.setdefault("keys", {})[p.key(k)["id"]] = c
+        if lt.get("keys") and lt.get("effect") != "custom":
+            lt["effect"] = "custom"
+        p.lighting = lt
     _edit_and_apply(a, edit)
 
 
@@ -250,6 +283,18 @@ def main(argv=None):
     s.add_argument("--release", type=float, help="reset distance (mm)")
     s.add_argument("--no-apply", action="store_true")
     s.set_defaults(fn=cmd_rt)
+
+    s = sub.add_parser("light", help="lighting:  deerctl light breath --color cyan --brightness 6")
+    s.add_argument("effect", nargs="?", help="effect name, 'custom' or 'off' (see --list)")
+    s.add_argument("-c", "--color", help="rainbow, red, green, blue, yellow, purple, cyan, white or #rrggbb")
+    s.add_argument("-b", "--brightness", type=int, choices=range(10), metavar="0-9")
+    s.add_argument("-s", "--speed", type=int, choices=range(10), metavar="0-9")
+    s.add_argument("-k", "--key", action="append", metavar="KEY=COLOUR",
+                   help="per-key colour (switches to custom), repeatable")
+    s.add_argument("--clear-keys", action="store_true", help="drop per-key colours")
+    s.add_argument("--list", action="store_true", help="list effects for your keyboard")
+    s.add_argument("--no-apply", action="store_true")
+    s.set_defaults(fn=cmd_light)
 
     s = sub.add_parser("apply", help="write the profile (or a given JSON file) to the keyboard")
     s.add_argument("file", nargs="?")

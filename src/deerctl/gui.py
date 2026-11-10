@@ -13,9 +13,9 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from importlib import resources
 
 from .hidio import DeviceError, find_device
-from .keys import TARGETS, target_from_slot
+from .keys import BUILTIN, TARGETS, target_from_slot
 from .profile import Profile
-from .protocol import LAYERS, Keyboard, actuation_mode
+from .protocol import LAYERS, PRESET_COLOURS, Keyboard, actuation_mode, effects
 
 TOKEN = secrets.token_urlsafe(24)
 _lock = threading.Lock()
@@ -52,6 +52,9 @@ def state() -> dict:
                        "step": 1 / mode[3]},
             "keys": keys, "targets": groups, "labels": {t.name: t.label for t in TARGETS.values()},
             "profile": prof.to_json(), "path": str(prof.path),
+            "builtin": BUILTIN.get(m.name, {}),
+            "effects": list(effects(m, i.firmware)) + ["custom"],
+            "colours": PRESET_COLOURS,
         }
     finally:
         kb.dev.close()

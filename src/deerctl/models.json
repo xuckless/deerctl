@@ -16,6 +16,134 @@
    ],
    "ktype": 75,
    "profile": "ns",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color22",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color23",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color24",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color25",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    }
+   ],
    "remap": "Vw",
    "layout": [
     "ESC",
@@ -744,6 +872,134 @@
    ],
    "ktype": 756,
    "profile": "is",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": 240
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": 18
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": 18
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": 0
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": 1
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": 2
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": 3
+    },
+    {
+     "title": "color11",
+     "preset": 0,
+     "colourful": 0,
+     "code": 4
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": 5
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": 6
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": 7
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": 8
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": 9
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": 10
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": 11
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": 12
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": 13
+    },
+    {
+     "title": "color26",
+     "preset": 0,
+     "colourful": 0,
+     "code": 14
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": 15
+    },
+    {
+     "title": "color25",
+     "preset": 0,
+     "colourful": 0,
+     "code": 16
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": 17
+    }
+   ],
    "remap": "cs",
    "layout": [
     "ESC",
@@ -1514,6 +1770,134 @@
    ],
    "ktype": 757,
    "profile": "Us",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": 240
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": 18
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": 18
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": 0
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": 1
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": 2
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": 3
+    },
+    {
+     "title": "color11",
+     "preset": 0,
+     "colourful": 0,
+     "code": 4
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": 5
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": 6
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": 7
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": 8
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": 9
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": 10
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": 11
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": 12
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": 13
+    },
+    {
+     "title": "color26",
+     "preset": 0,
+     "colourful": 0,
+     "code": 14
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": 15
+    },
+    {
+     "title": "color25",
+     "preset": 0,
+     "colourful": 0,
+     "code": 16
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": 17
+    }
+   ],
    "remap": "Fs",
    "layout": [
     "ESC",
@@ -2277,6 +2661,134 @@
    ],
    "ktype": 750,
    "profile": "ss",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color22",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color23",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color24",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color25",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    }
+   ],
    "remap": "Pw",
    "layout": [
     "ESC",
@@ -3005,6 +3517,134 @@
    ],
    "ktype": 751,
    "profile": "rs",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color22",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color23",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color24",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color25",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    }
+   ],
    "remap": "jw",
    "layout": [
     "ESC",
@@ -3727,6 +4367,134 @@
    "ids": [],
    "ktype": 752,
    "profile": "Es",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color22",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color23",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color24",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color25",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    }
+   ],
    "remap": "Ww",
    "layout": [
     "ESC",
@@ -4455,6 +5223,86 @@
    ],
    "ktype": 650,
    "profile": "ts",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    }
+   ],
    "remap": "gs",
    "layout": [
     "",
@@ -5083,6 +5931,134 @@
    ],
    "ktype": 65,
    "profile": "Is",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color11",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color19",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    }
+   ],
    "remap": "Bs",
    "layout": [
     "",
@@ -5706,6 +6682,134 @@
    ],
    "ktype": 651,
    "profile": "ks",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color11",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color19",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    }
+   ],
    "remap": "us",
    "layout": [
     "",
@@ -6329,6 +7433,134 @@
    ],
    "ktype": 652,
    "profile": "Rs",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color11",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color19",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    }
+   ],
    "remap": "Js",
    "layout": [
     "",
@@ -6952,6 +8184,134 @@
    ],
    "ktype": 653,
    "profile": "Ys",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color11",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color19",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    }
+   ],
    "remap": "Gs",
    "layout": [
     "",
@@ -7575,6 +8935,134 @@
    ],
    "ktype": 60,
    "profile": "os",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color11",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color19",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    }
+   ],
    "remap": "Qs",
    "layout": [
     "",
@@ -8149,6 +9637,128 @@
    ],
    "ktype": 603,
    "profile": "xs",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": 240
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": 20
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": 20
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": 5
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": 7
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": 2
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": 3
+    },
+    {
+     "title": "color11",
+     "preset": 0,
+     "colourful": 0,
+     "code": 9
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 0,
+     "code": 8
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": 0
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": 4
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": 10
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": 11
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": 13
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": 15
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": 12
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": 6
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": 16
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": 14
+    },
+    {
+     "title": "color19",
+     "preset": 1,
+     "colourful": 1,
+     "code": 17
+    }
+   ],
    "remap": "Ts",
    "layout": [
     "ESC",
@@ -8877,6 +10487,134 @@
    ],
    "ktype": 600,
    "profile": "ds",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color11",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color19",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    }
+   ],
    "remap": "Ss",
    "layout": [
     "",
@@ -9451,6 +11189,134 @@
    ],
    "ktype": 601,
    "profile": "Ns",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color11",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color19",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    }
+   ],
    "remap": "Ks",
    "layout": [
     "",
@@ -10025,6 +11891,134 @@
    ],
    "ktype": 602,
    "profile": "ys",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color11",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color19",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    }
+   ],
    "remap": "Ls",
    "layout": [
     "",
@@ -10599,6 +12593,134 @@
    ],
    "ktype": 754,
    "profile": "yw",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color11",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color19",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    }
+   ],
    "remap": "vw",
    "layout": [
     "ESC",
@@ -11341,6 +13463,134 @@
    ],
    "ktype": 755,
    "profile": "ws",
+   "lighting": [
+    {
+     "title": "color1",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color20",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color21",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color2",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color3",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color4",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color5",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color6",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color7",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color8",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color9",
+     "preset": 1,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color10",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color11",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color12",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color13",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    },
+    {
+     "title": "color14",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color15",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color16",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color17",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color18",
+     "preset": 0,
+     "colourful": 0,
+     "code": null
+    },
+    {
+     "title": "color19",
+     "preset": 1,
+     "colourful": 1,
+     "code": null
+    }
+   ],
    "remap": "Xw",
    "layout": [
     "ESC",
