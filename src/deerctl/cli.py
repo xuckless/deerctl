@@ -13,10 +13,6 @@ from .keys import TARGETS
 from .profile import Profile
 from .protocol import LAYERS, MODELS, PRESET_COLOURS, Keyboard, Model, actuation_mode, effects
 
-UDEV_RULE = ('# Drunkdeer keyboards: let the logged-in user reach the config interface\n'
-             '# (used by deerctl and by WebHID in Chrome/Edge).\n'
-             'SUBSYSTEM=="hidraw", ATTRS{idVendor}=="352d", TAG+="uaccess", MODE="0660"\n')
-UDEV_PATH = "/etc/udev/rules.d/70-drunkdeer.rules"
 
 
 def connect() -> Keyboard:
@@ -213,19 +209,14 @@ def cmd_gui(a):
     serve(port=a.port, open_browser=not a.no_browser)
 
 
-def cmd_install_udev(a):
-    if not sys.platform.startswith("linux"):
-        print("Not needed on this OS.")
-        return
-    if os.geteuid() != 0:
-        print('Run with sudo:  sudo "$(command -v deerctl)" install-udev\n\nOr do it by hand:')
-        print(f"  echo '{UDEV_RULE.splitlines()[-1]}' | sudo tee {UDEV_PATH}")
-        print("  sudo udevadm control --reload && sudo udevadm trigger --subsystem-match=hidraw")
-        sys.exit(1)
-    Path(UDEV_PATH).write_text(UDEV_RULE)
-    subprocess.run(["udevadm", "control", "--reload"], check=False)
-    subprocess.run(["udevadm", "trigger", "--subsystem-match=hidraw"], check=False)
-    print(f"Installed {UDEV_PATH}. Replug the keyboard if it still isn't accessible.")
+def cmd_setup(a):
+    from .system import setup
+    setup(a)
+
+
+def cmd_uninstall(a):
+    from .system import uninstall
+    uninstall(a)
 
 
 def cmd_factory_reset(a):
@@ -308,11 +299,18 @@ def main(argv=None):
     s.add_argument("--port", type=int, default=0)
     s.add_argument("--no-browser", action="store_true")
     s.set_defaults(fn=cmd_gui)
-    sub.add_parser("install-udev", help="(Linux) grant your user access to the keyboard").set_defaults(fn=cmd_install_udev)
+    sub.add_parser("setup", help="one-time setup: let your user access the keyboard (Linux, asks for sudo)").set_defaults(fn=cmd_setup)
+    s = sub.add_parser("uninstall", help="remove the udev rule and installed files (profiles kept unless --purge)")
+    s.add_argument("--purge", action="store_true", help="also delete your saved profiles")
+    s.add_argument("-y", "--yes", action="store_true", help="don't ask for confirmation")
+    s.set_defaults(fn=cmd_uninstall)
     s = sub.add_parser("factory-reset", help="reset the keyboard to factory settings")
     s.add_argument("-y", "--yes", action="store_true")
     s.set_defaults(fn=cmd_factory_reset)
 
+    argv = list(sys.argv[1:] if argv is None else argv)
+    if argv[:1] == ["install-udev"]:          # old name
+        argv[0] = "setup"
     a = p.parse_args(argv)
     try:
         a.fn(a)

@@ -57,8 +57,7 @@ class _LinuxHid(HidDevice):
         except PermissionError:
             raise DeviceError(
                 f"No permission to open {self.path}.\n"
-                'Install the udev rule once with:  sudo "$(command -v deerctl)" install-udev\n'
-                "then unplug and replug the keyboard.") from None
+                "Run the one-time setup:  deerctl setup") from None
 
     def close(self):
         if self.fd is not None:

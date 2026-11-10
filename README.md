@@ -63,29 +63,66 @@ Known gaps: ISO variants share one identity, so French/German A75 ISO boards cur
 
 ## Install
 
-```sh
-git clone https://github.com/xuckless/deerctl
-cd deerctl
-pipx install .                 # or: python3 -m pip install --user .
-```
-
-**Linux, one time only:** give your user access to the keyboard, then replug it.
+One command, on Linux or macOS:
 
 ```sh
-sudo "$(command -v deerctl)" install-udev
+curl -fsSL https://raw.githubusercontent.com/xuckless/deerctl/main/install.sh | sh
 ```
 
-This installs `/etc/udev/rules.d/70-drunkdeer.rules`:
+The [installer](install.sh) is short; feel free to read it first. It:
+
+1. Installs deerctl into its own Python environment in `~/.local/share/deerctl`. It needs Python 3.9+, which most systems already have; it doesn't change your system Python.
+2. Links the `deerctl` command into `~/.local/bin`.
+3. **On Linux, runs `deerctl setup`**, which asks for your sudo password once to install a udev rule. Nothing else needs root.
+
+Re-run the same command to update.
+
+### One-time setup (Linux)
+
+If you skipped it during install, or are on a new machine:
+
+```sh
+deerctl setup
+```
+
+It's `deerctl setup`, not `sudo deerctl setup`: it calls sudo itself, and only for the two commands that need it. It installs `/etc/udev/rules.d/70-drunkdeer.rules`:
 
 ```
 SUBSYSTEM=="hidraw", ATTRS{idVendor}=="352d", TAG+="uaccess", MODE="0660"
 ```
 
-Bonus: this also makes the **official web driver work in Chrome/Chromium on Linux**. Without it, WebHID can't open the device, which is why the site "doesn't detect" the keyboard.
+This gives the logged-in user access to Drunkdeer keyboards. Bonus: it also makes the **official web driver work in Chrome/Chromium on Linux**. Without it, WebHID can't open the device, which is why the site "doesn't detect" the keyboard.
 
-**macOS:** the `hidapi` dependency is installed automatically. If the keyboard can't be opened, allow your terminal under *System Settings → Privacy & Security → Input Monitoring*.
+**macOS** needs no setup. If the keyboard can't be opened, allow your terminal under *System Settings → Privacy & Security → Input Monitoring*.
 
-Requires Python 3.9+.
+### Uninstall
+
+```sh
+deerctl uninstall           # shows what it will remove and asks first
+deerctl uninstall --purge   # also deletes your saved profiles
+```
+
+This removes the udev rule, the `deerctl` command and its install directory. Your profiles in `~/.config/deerctl` are kept unless you pass `--purge`.
+
+The keyboard itself keeps whatever you last saved to it. To restore its defaults first, run `deerctl reset-keymap` (or `deerctl factory-reset`) before uninstalling.
+
+### Other ways to install
+
+```sh
+pipx install git+https://github.com/xuckless/deerctl     # or from a clone: pipx install .
+deerctl setup
+```
+
+Installer options (environment variables):
+
+| Variable | Effect |
+|---|---|
+| `DEERCTL_HOME` | Install directory |
+| `DEERCTL_BIN_DIR` | Where the command is linked |
+| `DEERCTL_REF` | Branch or tag to install |
+| `DEERCTL_NO_SETUP=1` | Skip setup |
+
+For example: `curl -fsSL …/install.sh | DEERCTL_NO_SETUP=1 sh`.
 
 ## Usage
 
@@ -128,6 +165,9 @@ deerctl light off
 deerctl export my-board.json
 deerctl apply my-board.json
 deerctl factory-reset
+
+deerctl setup                                   # one-time Linux setup
+deerctl uninstall                               # remove deerctl (asks first)
 ```
 
 ### Profile format
