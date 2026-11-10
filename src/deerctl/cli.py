@@ -34,7 +34,8 @@ def cmd_info(a):
         print(f"Keyboard:      {dev.name}  ({dev.vid:04x}:{dev.pid:04x}, {dev.path})")
         print(f"Model:         {m.name}  (identity {i.identity})")
         print(f"Firmware:      {i.firmware_str}")
-        print(f"Rapid Trigger: {'on' if i.rapid_trigger else 'off'}   Turbo: {'on' if i.turbo else 'off'}")
+        print(f"Rapid Trigger: {'on' if i.rapid_trigger else 'off'}   Turbo: {'on' if i.turbo else 'off'}"
+              + ("  (Turbo locks lighting to static)" if i.turbo else ""))
         print(f"Actuation:     {mode[0]} encoding, 0.2–{mode[4]} mm")
         print(f"Profile file:  {Profile.load(m).path}")
 
@@ -74,6 +75,9 @@ def cmd_show(a):
         empty = False
     if prof.rapid_trigger:
         print(f"[rapid_trigger] {prof.rapid_trigger}")
+        empty = False
+    if prof.turbo is not None:
+        print(f"[turbo] {'on' if prof.turbo else 'off'}")
         empty = False
     if prof.lighting:
         print(f"[lighting] {prof.lighting}")
@@ -185,6 +189,15 @@ def cmd_light(a):
     _edit_and_apply(a, edit)
 
 
+def cmd_turbo(a):
+    def edit(p: Profile):
+        p.turbo = a.state == "on"
+        if p.turbo and p.lighting:
+            print("  note: Turbo locks lighting to static, so the profile's lighting section is set aside.")
+            p.lighting = None
+    _edit_and_apply(a, edit)
+
+
 def cmd_apply(a):
     kb = connect()
     try:
@@ -274,6 +287,11 @@ def main(argv=None):
     s.add_argument("--release", type=float, help="reset distance (mm)")
     s.add_argument("--no-apply", action="store_true")
     s.set_defaults(fn=cmd_rt)
+
+    s = sub.add_parser("turbo", help="Turbo mode (lower latency; locks lighting to static)")
+    s.add_argument("state", choices=["on", "off"])
+    s.add_argument("--no-apply", action="store_true")
+    s.set_defaults(fn=cmd_turbo)
 
     s = sub.add_parser("light", help="lighting:  deerctl light breath --color cyan --brightness 6")
     s.add_argument("effect", nargs="?", help="effect name, 'custom' or 'off' (see --list)")

@@ -47,7 +47,7 @@ def state() -> dict:
             groups.setdefault(t.group, []).append({"name": t.name, "label": t.label})
         return {
             "connected": True, "model": m.name, "firmware": i.firmware_str,
-            "rapid_trigger_on": bool(i.rapid_trigger),
+            "rapid_trigger_on": bool(i.rapid_trigger), "turbo_on": bool(i.turbo),
             "travel": {"mode": mode[0], "ap_max": mode[4], "rt_max": mode[5],
                        "step": 1 / mode[3]},
             "keys": keys, "targets": groups, "labels": {t.name: t.label for t in TARGETS.values()},

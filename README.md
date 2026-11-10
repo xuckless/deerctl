@@ -24,6 +24,7 @@ Everything is written to the keyboard itself, so your remaps work everywhere, ev
 | Targets | Letters, numbers, symbols, F1–F24, navigation, keypad, international keys, modifiers, Fn/Fn2, media keys, mouse buttons and wheel, lighting controls, Win-lock, Rapid-Trigger toggle, disable, or any raw HID usage (`hid:0x46`) |
 | Actuation point | All keys or per key, in mm; the range is detected from model and firmware |
 | Rapid Trigger | On/off, press and release sensitivity |
+| Turbo mode | On/off (lower latency; the firmware locks lighting to static while it's on) |
 | Lighting | Every built-in effect (breath, wave, ripple, reactive…), 7 preset colours or rainbow, brightness and speed 0–9, or **any colour per key** |
 | Profiles | JSON import/export, `deerctl apply file.json` |
 | Other | Model and firmware info, factory reset |
@@ -155,6 +156,7 @@ deerctl actuation 1.2                           # all keys, in mm
 deerctl actuation 0.6 --keys w,a,s,d
 deerctl rt on --press 0.2 --release 0.2         # Rapid Trigger
 deerctl rt off
+deerctl turbo off                               # Turbo on = lower latency, but static lighting
 
 deerctl light --list                            # effects for your board
 deerctl light breath --color cyan -b 9 -s 5     # effect, colour, brightness, speed
@@ -192,7 +194,8 @@ Profiles live in `~/.config/deerctl/<MODEL>.json` (macOS: `~/Library/Application
 
 - **The profile file is the source of truth.** The keyboard can't report its remaps back (the official driver keeps them in browser storage for the same reason), so every apply rewrites all three layers. Remaps made earlier with the web driver are replaced.
 - **Fn layers:** keys you don't set keep the keyboard's built-in Fn functions.
-- **Actuation, Rapid Trigger and lighting** are only written once you set them, so the keyboard's current values stay untouched until then.
+- **Turbo mode locks the lighting.** While Turbo is on, the firmware shows static lighting and ignores lighting changes. Saving lighting therefore switches Turbo off, as the official driver does. `deerctl info` shows the current state.
+- **Actuation, Rapid Trigger, Turbo and lighting** are only written once you set them, so the keyboard's current values stay untouched until then.
 
 ### G65 notes
 

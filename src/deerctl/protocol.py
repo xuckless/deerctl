@@ -187,12 +187,18 @@ class Keyboard:
             b[60] = 165
             self.transact(b)
 
-    def set_rapid_trigger(self, enabled: bool):
+    def set_modes(self, turbo: bool | None = None, rapid_trigger: bool | None = None):
+        """Turbo / Rapid Trigger switches (one command carries both)."""
         i = self.info
+        if turbo is not None:
+            i.turbo = int(turbo)
+        if rapid_trigger is not None:
+            i.rapid_trigger = int(rapid_trigger)
         lwrdt = (1 if i.lw else 0) | (2 if i.rdt else 0)
-        b = _pkt(181, 0, 30, 1, 0, 0, 1, i.turbo, int(enabled), 0, lwrdt, i.rt_match)
-        self.transact(b)
-        i.rapid_trigger = int(enabled)
+        self.transact(_pkt(181, 0, 30, 1, 0, 0, 1, i.turbo, i.rapid_trigger, 0, lwrdt, i.rt_match))
+
+    def set_rapid_trigger(self, enabled: bool):
+        self.set_modes(rapid_trigger=enabled)
 
     def write_travel(self, kind: str, values: list[float]):
         """kind: 'actuation' | 'press' | 'release'; values: 126 floats in mm."""

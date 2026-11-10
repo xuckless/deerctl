@@ -68,6 +68,7 @@ class Profile:
         self.actuation = data.get("actuation")
         self.rapid_trigger = data.get("rapid_trigger")
         self.lighting = data.get("lighting")
+        self.turbo = data.get("turbo")          # None = leave the keyboard's setting alone
         self.keys = physical_keys(model)
         self.by_id = {k["id"]: k for k in self.keys}
 
@@ -90,6 +91,8 @@ class Profile:
             d["rapid_trigger"] = self.rapid_trigger
         if self.lighting:
             d["lighting"] = self.lighting
+        if self.turbo is not None:
+            d["turbo"] = self.turbo
         return d
 
     def save(self, path: Path | None = None):
@@ -164,7 +167,19 @@ class Profile:
                 steps.append(("rt-release", lambda: kb.write_travel(
                     "release", self.travel_values(rt, "release", 0.3))))
             steps.append(("rapid-trigger", lambda: kb.set_rapid_trigger(bool(rt.get("enabled")))))
+        turbo = self.turbo
+        if self.lighting and turbo is None and kb.info.turbo:
+            # Turbo mode locks the lighting to static; the official driver switches it
+            # off when you pick an effect, so do the same.
+            turbo = False
+            if progress:
+                progress("turbo off (Turbo mode locks lighting)")
+        if turbo is not None and bool(turbo) != bool(kb.info.turbo):
+            steps.append(("turbo", lambda: kb.set_modes(turbo=bool(turbo))))
         if self.lighting:
+            if turbo:
+                raise ValueError("Turbo mode is on in this profile, and it locks the lighting to static. "
+                                 "Turn Turbo off (deerctl turbo off) to change lighting.")
             steps.append(("lighting", lambda: self.apply_lighting(kb)))
         for name, fn in steps:
             if progress:
